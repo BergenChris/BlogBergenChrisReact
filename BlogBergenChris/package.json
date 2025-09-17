@@ -1,16 +1,17 @@
 {
   "name": "blogbergenchris",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.ts",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "jest",
-    "start": "ts-node index.ts"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "npm": "^10.6.0",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
