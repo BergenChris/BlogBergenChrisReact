@@ -1,0 +1,16 @@
+{
+    "blogs":[
+        {
+            "id": 1,
+            "date":"2025-09-18",
+            "titel": "Eerste dagen",
+            "description": "De eerste dagen waren vooral kennis maken. Alles correct installeren en met de werking van het bedrijf en de porgrammes kennis maken. ",
+            "pos":["ervaring van echte werksfeer, leren werken met nieuwe programmeertalen","persoonlijke problemen met pc, 2 keer full reset en herinstallatie moeten doen"],
+            "neg":["weinig kennis, dus veel moeten vragen en ook wachten, productiviteit was dus laag"],
+            "stress": 4,
+            "motivation": 8
+        }
+
+
+    ]
+}

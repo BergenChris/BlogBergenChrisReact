@@ -1,7 +1,12 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
-
-// https://vite.dev/config/
-export default defineConfig({
-  plugins: [react()],
-})
+export default {
+  server: {
+    port: process.env.PORT || 4000,  // Use the correct port
+    host: '0.0.0.0',  // Bind to all network interfaces
+  },
+  preview: {
+    allowedHosts: ['blogbergenchrisreact.onrender.com', 'localhost'],  // Add allowed hosts
+  },
+  dev:{
+    allowedHosts: ['blogbergenchrisreact.onrender.com', 'localhost'],  // Add allowed hosts
+  }
+};
