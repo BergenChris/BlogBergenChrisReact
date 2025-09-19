@@ -1,10 +1,9 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+
   text-align: center;
 }
-
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -39,4 +38,62 @@
 
 .read-the-docs {
   color: #888;
+}
+/* Navbar wrapper is invisible but needed for structure */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Hamburger icon fixed in top-left */
+.hamburger {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1rem;
+  background: #006699;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Hidden menu by default */
+.nav-menu {
+  display: none;
+
+}
+
+/* When open, show nav bar fixed at the top */
+.nav-menu.open {
+  position: fixed;
+  top: 0;
+  left: 50%;              /* center horizontally */
+  transform: translateX(-50%); /* shift left by 50% of own width */
+  width: 80%;
+  background-color: #006699;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  z-index: 1000;
+  border-bottom: 2px solid #004466;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+/* Nav links */
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.nav-menu a:hover {
+  background-color: #00557a;
 }

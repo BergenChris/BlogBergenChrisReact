@@ -1,44 +1,50 @@
 import { useEffect, useState } from 'react';
-import type { Blog } from '../../types';
+import type { BlogItem } from '../../types';
+import './index.css';
+import { Link } from 'react-router-dom';
 
 export default function HomePage() {
-  const [lastBlog, setLastBlog] = useState<Blog | null>(null);
+  const [items, setItems] = useState<BlogItem[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch('/data/blogs.json')
-      .then(res => res.json())
-      .then(data => {
-        // data.blogs is array, pak laatste blog
-        const blogs: Blog[] = data.blogs;
-        if (blogs.length > 0) {
-          setLastBlog(blogs[blogs.length - 1]);
-        }
+      .then((res) => res.json())
+      .then((data) => {
+        setItems(data.blogs);
         setLoading(false);
       })
-      .catch(err => {
+      .catch((err) => {
         console.error('Error loading JSON:', err);
         setLoading(false);
       });
   }, []);
 
-  if (loading) return <p>Loading latest blog...</p>;
+  if (loading) return <p className="loading">Loading blogs...</p>;
+
+
 
   return (
-    <div>
-      <h1>Welcome to the Blog Bergen Chris</h1>
-      <p>This is the home page.</p>
+    <div className="home-container">
+      <header className="hero">
+        <h1>Welkom bij Blog Bergen Chris</h1>
+        <p>Lees hier de laatste inzichten, verhalen en gedachten van Chris.</p>
+      </header>
 
-      {lastBlog ? (
-        <div style={{ marginTop: '2rem', padding: '1rem', border: '1px solid #ccc' }}>
-          <h2>Laatste blog: {lastBlog.title}</h2>
-          <p><strong>Datum:</strong> {lastBlog.date}</p>
-          <p>{lastBlog.description}</p>
-          {/* Wil je meer velden hier ook tonen, zoals pos/neg? */}
-        </div>
-      ) : (
-        <p>Geen blogs gevonden.</p>
-      )}
+      <main>
+        
+        <ul className="home-list">
+        {items.slice().reverse().map(({ id, title, description }) => (
+          <li key={id} className="home-item">
+            <h3>
+              <Link to={`/blog/${id}`} className="home-link">{title}</Link>
+            </h3>
+            <p className="home-description">{description}</p>
+          </li>
+        ))}
+
+      </ul>
+      </main>
     </div>
   );
 }

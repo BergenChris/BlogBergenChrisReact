@@ -1,4 +1,4 @@
-export interface Blog {
+export interface BlogItem {
     id: number;
     date: string;
     title: string;

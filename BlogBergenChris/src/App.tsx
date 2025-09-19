@@ -1,25 +1,39 @@
-
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import BlogPage from './pages/blogpage';
 import HomePage from './pages/home';
-import BlogPageById from './pages/blogpage/[id]';
-
+import LatestBlogRedirect from './pages/blog/latestblog';
+import BlogBergenChris from './pages/blog/blog';
+import BlogById from './pages/blog/[id]';
+import { useState } from 'react';
+import './App.css';
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <BrowserRouter>
-      <nav>
-        <Link to="/home" style={{ marginRight: '10px' }}>Home</Link>
-        <Link to="/blog" style={{ marginRight: '10px' }}>Blog</Link>
-       
-      </nav>
+      {/* Fixed Hamburger and Menu */}
+      <header className="navbar">
+        <button
+          className="hamburger"
+          onClick={() => setMenuOpen(prev => !prev)}
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
 
+        <nav className={`nav-menu ${menuOpen ? 'open' : ''}`}>
+          <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+          <Link to="/blog" onClick={() => setMenuOpen(false)}>Blog</Link>
+          <Link to="/blog/latestblog" onClick={() => setMenuOpen(false)}>Latest Blog</Link>
+        </nav>
+      </header>
+
+      {/* App Routes */}
       <Routes>
-        <Route path="/home" element={<HomePage/>} /> 
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/blog/:id" element={<BlogPageById />} />
-
-  
+        <Route path="/" element={<HomePage />} />
+        <Route path="/blog" element={<BlogBergenChris />} />
+        <Route path="/blog/:id" element={<BlogById />} />
+        <Route path="/blog/latestblog" element={<LatestBlogRedirect />} />
       </Routes>
     </BrowserRouter>
   );

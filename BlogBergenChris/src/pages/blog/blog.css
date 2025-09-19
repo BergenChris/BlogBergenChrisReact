@@ -1,0 +1,130 @@
+
+
+.blog-page-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fcfdff;
+  color: #333;
+}
+
+.blog-header {
+  background-color: #004466;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.blog-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  background-color: #f0f8ff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.blog-link {
+  text-decoration: none;
+  color: #004466;
+  background-color: #e6f2f5;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.blog-link:hover {
+  background-color: #cce5eb;
+}
+
+.blog-date {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.blog-description {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.blog-metrics {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.metric label {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.metric progress {
+  width: 150px;
+  height: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.metric span {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.pos-neg-list {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin: 0.5rem 0 1rem 0;
+}
+
+
+.positive {
+  color: green;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.positive::before {
+  content: '–'; 
+  margin-right: 0.5rem;
+  color: green;
+}
+
+
+.negative {
+  color: red;
+  padding-left: 1rem;
+  position: relative;
+}
+
+
+.negative::before {
+  content: '–'; 
+  margin-right: 0.5rem;
+  color: red;
+}
+
+
+
+.loading {
+  text-align: center;
+  font-style: italic;
+  margin-top: 2rem;
+}
