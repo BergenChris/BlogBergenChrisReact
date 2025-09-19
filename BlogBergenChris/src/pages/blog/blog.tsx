@@ -6,6 +6,7 @@ import './blog.css';
 function Blog() {
   const [items, setItems] = useState<BlogItem[]>([]);
   const [loading, setLoading] = useState(true);
+  const [isReversed, setIsReversed] = useState(true); // default reversed, zoals je eerder had
 
   useEffect(() => {
     fetch('/data/blogs.json')
@@ -22,15 +23,21 @@ function Blog() {
 
   if (loading) return <p className="loading">Loading blogs...</p>;
 
+  // items gesorteerd afhankelijk van isReversed
+  const displayItems = isReversed ? [...items].reverse() : items;
+
   return (
     <div className="blog-page-container">
       <header className="blog-header">
         <h1>Blog Bergen Chris</h1>
         <p>Overzicht van alle blogs</p>
+        <button className='order' onClick={() => setIsReversed((prev) => !prev)}>
+          {isReversed ? 'Oud → Nieuw':'Nieuw → Oud'} 
+        </button>
       </header>
 
       <ul className="blog-list">
-        {items.slice().reverse().map((item) => (
+        {displayItems.map((item) => (
           <li key={item.id} className="blog-item">
             <h3>
               <Link to={`/blog/${item.id}`} className="blog-link">
@@ -51,18 +58,15 @@ function Blog() {
                 <progress max={10} value={item.motivation}></progress>
                 <span>{item.motivation}/10</span>
               </div>
-         
               <div className="metric">
                 <label>Pos:</label>
-                  <p style={{color:"green"}}>{item.pos.length}</p>
-                </div>
-                <div className="metric">
-                  <label>Neg:</label>
-                   <p style={{color:"red"}}>{item.neg.length}</p>
-                </div>
+                <p style={{ color: 'green' }}>{item.pos.length}</p>
+              </div>
+              <div className="metric">
+                <label>Neg:</label>
+                <p style={{ color: 'red' }}>{item.neg.length}</p>
+              </div>
             </div>
-
-            
           </li>
         ))}
       </ul>

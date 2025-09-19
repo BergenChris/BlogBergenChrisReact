@@ -17,6 +17,7 @@
   text-align: center;
   margin-bottom: 2.5rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  
 }
 
 .hero h1 {
@@ -97,4 +98,21 @@ main {
 main section {
   /* elke sectie neemt volledige breedte */
   width: 100%;
+}
+.blog-title {
+  background-color: #b8d8e9;
+  color:#004466;
+  border-radius: 6px;;
+}
+.blog-title > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap; /* zorgt dat ze onder elkaar gaan bij kleine breedte */
+  text-align: center;
+}
+
+.blog-title img {
+  height: 1.5em;
 }

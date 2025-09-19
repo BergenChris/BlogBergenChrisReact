@@ -136,3 +136,24 @@
   font-style: italic;
   margin-top: 2rem;
 }
+.order {
+  background-color: #007BFF;    
+  color: white;                 
+  border: none;                  
+  padding: 0.5rem 1rem;          
+  font-size: 1rem;               
+  border-radius: 4px;            
+  cursor: pointer;               
+  transition: background-color 0.3s ease;
+  user-select: none;             
+}
+
+.order:hover {
+  background-color: #0056b3;      
+}
+
+.order:focus {
+  outline: 2px solid #0056b3;    
+  outline-offset: 2px;
+}
+

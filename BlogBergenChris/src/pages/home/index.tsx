@@ -49,8 +49,15 @@ export default function HomePage() {
   return (
     <div className="home-container">
       <header className="hero">
-        <h1>Welkom bij Blog Bergen Chris</h1>
-        <p>Lees hier de laatste inzichten, verhalen en gedachten van Chris.</p>
+        <h1 className="blog-title">
+          <div>
+            Welkom bij mijn Blog @ 
+            <img src="/logoDeskDrive.svg" alt="logo DeskDrive" />
+          </div>
+        </h1>
+        <p>Fijn dat je hier bent! Dit is mijn plek om alles te delen over mijn stage: wat ik meemaak, wat ik leer en de dingen die ik tegenkom onderweg. Of je nu mentor, begeleider bent, of gewoon nieuwsgierig, hier vind je mijn persoonlijke verhalen, ervaringen en handige tips die ik onderweg verzamel.</p>
+        <p>Op deze site kun je niet alleen de nieuwste blogs bekijken, maar ook ontdekken wat deze stage precies inhoudt en hoe ik mezelf ontwikkel. Ik neem je mee in de hoogtepunten, maar ook de uitdagingen die horen bij zo een leertraject. Mijn doel is om jou een eerlijk en inspirerend kijkje te geven in mijn avontuur.</p>
+        <p>Ik hoop dat mijn verhalen je aan het denken zetten, je motiveren of gewoon leuk zijn om te lezen. Dus, klik snel door en lees mee - ik neem je graag mee op deze reis!</p>
       </header>
 
       <main>
