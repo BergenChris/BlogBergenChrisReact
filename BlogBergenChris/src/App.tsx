@@ -1,6 +1,5 @@
 
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-
 import BlogPage from './pages/blogpage';
 import HomePage from './pages/home';
 import BlogPageById from './pages/blogpage/[id]';
