@@ -14,7 +14,7 @@ function App() {
       {/* Fixed Hamburger and Menu */}
       <header className="navbar">
         <button
-          className="hamburger"
+           className={`hamburger ${menuOpen ? 'open' : ''}`}
           onClick={() => setMenuOpen(prev => !prev)}
           aria-label="Toggle navigation"
         >

@@ -82,3 +82,23 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.nav-menu a,
+.nav-menu a:link,
+.nav-menu a:visited,
+.nav-menu a:active {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+}
+
+.nav-menu a:hover {
+  background-color: #00557a;
+  color: white;
+}
