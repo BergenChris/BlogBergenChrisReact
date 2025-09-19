@@ -77,8 +77,21 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-
-
-.nav-menu a:hover {
-  font-size: large;
+html{
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
+html{
+  /* background-image: url("/enterprise-resource-planning-holographic-interface.jpg");*/
+  background-image: url("/customer-relationship-management-concept.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+
+
+

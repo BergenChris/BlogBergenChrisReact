@@ -29,10 +29,9 @@ function Blog() {
   return (
     <div className="blog-page-container">
       <header className="blog-header">
-        <h1>Blog Bergen Chris</h1>
-        <p>Overzicht van alle blogs</p>
+        <h1>Overzicht van alle blogs</h1>
         <button className='order' onClick={() => setIsReversed((prev) => !prev)}>
-          {isReversed ? 'Oud → Nieuw':'Nieuw → Oud'} 
+          {isReversed ? 'Eerste → Laatste':'Laatste → Eerste'} 
         </button>
       </header>
 

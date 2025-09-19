@@ -23,8 +23,8 @@ function App() {
 
         <nav className={`nav-menu ${menuOpen ? 'open' : ''}`}>
           <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
-          <Link to="/blog" onClick={() => setMenuOpen(false)}>Blog</Link>
-          <Link to="/blog/latestblog" onClick={() => setMenuOpen(false)}>Latest Blog</Link>
+          <Link to="/blog" onClick={() => setMenuOpen(false)}>Blog Pagina</Link>
+          <Link to="/blog/latestblog" onClick={() => setMenuOpen(false)}>Laatste Blog</Link>
         </nav>
       </header>
 

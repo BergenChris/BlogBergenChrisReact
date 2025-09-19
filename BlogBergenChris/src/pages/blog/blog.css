@@ -1,12 +1,11 @@
 
 
 .blog-page-container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem;
+  max-width: 100%;
+  padding: 5% 10% 0 10%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fcfdff;
   color: #333;
+  
 }
 
 .blog-header {
@@ -156,4 +155,6 @@
   outline: 2px solid #0056b3;    
   outline-offset: 2px;
 }
+
+
 
