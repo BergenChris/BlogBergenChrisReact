@@ -6,16 +6,13 @@
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-
-    /* Bundler mode */
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",         // ← changed from 'bundler' to 'node'
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
-
-    /* Linting */
+    "esModuleInterop": true,            // ← add this
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
