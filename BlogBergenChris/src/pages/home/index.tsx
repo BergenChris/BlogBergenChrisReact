@@ -22,7 +22,29 @@ export default function HomePage() {
 
   if (loading) return <p className="loading">Loading blogs...</p>;
 
+  if (items.length === 0) return null;
 
+  const reversed = items.slice().reverse();
+  const newest = reversed[0];
+  const rest = reversed.slice(1);
+
+  // Functie om N willekeurige unieke items te kiezen uit een array
+  function getRandomItems<T>(arr: T[], n: number): T[] {
+    const result: T[] = [];
+    const taken = new Set<number>();
+
+    while (result.length < n && result.length < arr.length) {
+      const idx = Math.floor(Math.random() * arr.length);
+      if (!taken.has(idx)) {
+        taken.add(idx);
+        result.push(arr[idx]);
+      }
+    }
+    return result;
+  }
+
+  // Pak 2 random uit rest (of minder als er minder zijn)
+  const randomOthers = getRandomItems(rest, 2);
 
   return (
     <div className="home-container">
@@ -32,19 +54,35 @@ export default function HomePage() {
       </header>
 
       <main>
-        
-        <ul className="home-list">
-        {items.slice().reverse().map(({ id, title, description }) => (
-          <li key={id} className="home-item">
+        {/* Laatste blog apart */}
+        <section className="latest-blog">
+          <h2>Laatste blog</h2>
+          <article className="home-item" key={newest.id}>
             <h3>
-              <Link to={`/blog/${id}`} className="home-link">{title}</Link>
+              <Link to={`/blog/${newest.id}`} className="home-link">{newest.title}</Link>
             </h3>
-            <p className="home-description">{description}</p>
-          </li>
-        ))}
+            <p className="home-description">{newest.description}</p>
+          </article>
+        </section>
 
-      </ul>
+        {/* Twee random blogs apart */}
+        {randomOthers.length > 0 && (
+          <section className="random-blogs">
+            <h2>Andere blogs</h2>
+            <ul className="home-list">
+              {randomOthers.map(({ id, title, description }) => (
+                <li key={id} className="home-item">
+                  <h3>
+                    <Link to={`/blog/${id}`} className="home-link">{title}</Link>
+                  </h3>
+                  <p className="home-description">{description}</p>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
       </main>
     </div>
   );
 }
+

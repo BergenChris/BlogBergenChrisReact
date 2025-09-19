@@ -87,3 +87,14 @@
   font-size: 1.3rem;
   color: #666;
 }
+main {
+  display: flex;
+  flex-direction: column; /* 2 rijen onder elkaar */
+  gap: 1.5rem; /* wat ruimte tussen de secties */
+  padding: 1rem;
+}
+
+main section {
+  /* elke sectie neemt volledige breedte */
+  width: 100%;
+}

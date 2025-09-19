@@ -51,29 +51,18 @@ function Blog() {
                 <progress max={10} value={item.motivation}></progress>
                 <span>{item.motivation}/10</span>
               </div>
+         
+              <div className="metric">
+                <label>Pos:</label>
+                  <p style={{color:"green"}}>{item.pos.length}</p>
+                </div>
+                <div className="metric">
+                  <label>Neg:</label>
+                   <p style={{color:"red"}}>{item.neg.length}</p>
+                </div>
             </div>
 
-            {item.pos.length > 0 && (
-              <>
-                <h4>✅ Positieve punten</h4>
-                <ul className="pos-neg-list">
-                  {item.pos.map((p, i) => (
-                    <li key={`pos-${i}`} className="positive">{p}</li>
-                  ))}
-                </ul>
-              </>
-            )}
-
-            {item.neg.length > 0 && (
-              <>
-                <h4>❌ Negatieve punten</h4>
-                <ul className="pos-neg-list">
-                  {item.neg.map((n, i) => (
-                    <li key={`neg-${i}`} className="negative">{n}</li>
-                  ))}
-                </ul>
-              </>
-            )}
+            
           </li>
         ))}
       </ul>
