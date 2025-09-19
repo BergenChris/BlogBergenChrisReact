@@ -1,8 +1,9 @@
-export default function Home() {
-  return (
-    <div>
-      <h1>Welcome to the Blog Bergen Chris</h1>
-      <p>This is the main entry point of the application.</p>
-    </div>
-  );
-}
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);

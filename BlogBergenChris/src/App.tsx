@@ -1,8 +1,29 @@
-export default function Home() {
+
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+
+import BlogPage from './pages/blogpage';
+import HomePage from './pages/home';
+import BlogPageById from './pages/blogpage/[id]';
+
+
+function App() {
   return (
-    <div>
-      <h1>Welcome to the Blog Bergen Chris</h1>
-      <p>This is the main entry point of the application.</p>
-    </div>
+    <BrowserRouter>
+      <nav>
+        <Link to="/home" style={{ marginRight: '10px' }}>Home</Link>
+        <Link to="/blog" style={{ marginRight: '10px' }}>Blog</Link>
+       
+      </nav>
+
+      <Routes>
+        <Route path="/home" element={<HomePage/>} /> 
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/:id" element={<BlogPageById />} />
+
+  
+      </Routes>
+    </BrowserRouter>
   );
 }
+
+export default App;
