@@ -48,7 +48,7 @@ function App() {
         <Route path="/blog/:id" element={<BlogById />} />
         <Route path="/blog/latestblog" element={<LatestBlogRedirect />} />
       </Routes>
-      <button className='toggle' onClick={()=> setBackgroundToggled(!backgroundToggled) }>Achtergrond</button>
+      <button  onClick={()=> setBackgroundToggled(!backgroundToggled) }>Achtergrond 🔄</button>
     </BrowserRouter>
   );
 }
