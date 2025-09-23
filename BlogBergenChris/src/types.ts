@@ -7,4 +7,5 @@ export interface BlogItem {
     neg: string[];
     stress: number;
     motivation: number;
+    tags?: string[];
 }

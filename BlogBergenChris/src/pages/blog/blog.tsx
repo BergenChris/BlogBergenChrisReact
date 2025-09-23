@@ -7,12 +7,23 @@ function Blog() {
   const [items, setItems] = useState<BlogItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [isReversed, setIsReversed] = useState(true); // default reversed, zoals je eerder had
+  const [tags,setTags] = useState<string[]>([]);
+  const [selectedTag, setSelectedTag] = useState<string | null>(null);
 
   useEffect(() => {
     fetch('/data/blogs.json')
       .then((res) => res.json())
       .then((data) => {
         setItems(data.blogs);
+
+        const allTags = new Set<string>(); //set zorgt dat er geen dubbele tags zijn
+        data.blogs.forEach((blog: BlogItem) => {
+          if (blog.tags) 
+            {
+              blog.tags.forEach((tag) => allTags.add(tag));
+            }
+        });
+        setTags(Array.from(allTags));
         setLoading(false);
       })
       .catch((err) => {
@@ -20,6 +31,12 @@ function Blog() {
         setLoading(false);
       });
   }, []);
+
+  useEffect(() => {
+  const filteredBlogs = [...items].filter(item => item.tags && selectedTag != null && item.tags.includes(selectedTag));
+  setItems(filteredBlogs)
+
+   }, [selectedTag]);
 
   if (loading) return <p className="loading">Loading blogs...</p>;
 
@@ -34,6 +51,20 @@ function Blog() {
           {isReversed ? 'Eerste → Laatste':'Laatste → Eerste'} 
         </button>
       </header>
+    
+      <div className='tag-container'>
+         <h2>tags:</h2>
+         <div className='tag-container-buttons'>
+          {
+          tags.map((tag, index) => (
+            <button key={index} className="tag-button" onClick={()=>setSelectedTag(tag)}>
+              {tag}
+            </button>
+          ))
+        }
+         </div>
+        
+      </div>
 
       <ul className="blog-list">
         {displayItems.map((item) => (
@@ -60,16 +91,20 @@ function Blog() {
                 <span>{item.motivation}/10</span>
               </div>
             </div>
-            <div className="blog-metrics">
-              <div className="metric">
-                <label>Pos:</label>
-                <p style={{ color: 'green' }}>{item.pos.length}</p>
-              </div>
-              <div className="metric">
-                <label>Neg:</label>
-                <p style={{ color: 'red' }}>{item.neg.length}</p>
-              </div>
+            <div className='blog-metrics'>
+                {
+                  item.tags && item.tags.length > 0 && item.tags.map((tag, index) => (
+                    <div className="blog-metrics-tags">
+                    <button key={index} className="tag-button">
+                      {tag}
+                    </button>
+                    </div>
+
+                  ))
+                }
             </div>
+         
+            
           </li>
         ))}
       </ul>

@@ -89,7 +89,11 @@
   margin: 1rem 0;
   box-sizing: border-box;
 }
-
+.blog-metrics-tags{
+  width: 100%;
+  justify-content: space-around;
+  
+}
 
 .metric {
   display: flex;
@@ -167,6 +171,44 @@ body{
   background-repeat: no-repeat;
   height: 100vh;
   border-radius: 15px;;
+}
+
+.tag-container {
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-around;  
+  gap: 0 10px;
+  
+}
+
+.tag-container-buttons {
+  display: flex;
+  flex-wrap: wrap;              /* Zorgt dat buttons naar een nieuwe regel gaan als ze niet passen */
+  justify-content: space-around; /* Verspreid buttons gelijkmatig over de breedte */
+  align-items: center;  
+  gap:20px 50px;        /* Verticaal centreren van buttons in de rij */
+  max-width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;           /* Ruimte onder de container */
+}
+
+.tag-container h2{
+  color:#cce5eb;
+}
+
+.tag-button {
+  padding: 6px 12px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  width: auto;
+}
+
+.tag-button:hover {
+  background-color: #ddd;
 }
 
 
