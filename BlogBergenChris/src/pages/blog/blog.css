@@ -177,7 +177,7 @@ body{
   display: flex;
   flex-direction: row;  
   justify-content: space-around;  
-  gap: 0 10px;
+  gap: 0 30px;
   
 }
 
@@ -206,6 +206,15 @@ body{
   transition: background-color 0.3s ease;
   width: auto;
 }
+.tag-button-id{
+  background-color: #006699;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  cursor: default;
+  font-size: 0.9rem;
+}
 
 .tag-button:hover {
   background-color: #ddd;
@@ -214,8 +223,14 @@ body{
 .nav-buttons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
   margin-bottom: 20px;
+}
+.reset-tags{
+  background-color: #006699;
+  color:white ;
+  height: 80%;
+
 }
 
 

@@ -50,6 +50,17 @@ function BlogById() {
   return (
     <div className="blog-page-container">
       <article className="blog-item">
+        <div className='blog-metrics'>
+          {blogById && blogById.tags && blogById.tags.length > 0 && (
+           blogById.tags.map((tag, i) => (
+            <div className="blog-metrics-tags" key={i}>
+                    <button className="tag-button-id" onClick={() => navigate(`/blog?tag=${encodeURIComponent(tag)}`)}>
+                      {tag}
+                    </button>
+            </div>
+           ))
+          )}
+        </div>
         <div>
           <img src={`/data/blogPictures/img${id}.png`} style={{ width: '75%' }} onError={(e) => (e.currentTarget.style.display = 'none')}/>
         </div>

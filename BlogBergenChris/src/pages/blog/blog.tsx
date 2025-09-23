@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import type { BlogItem } from '../../types';
 import './blog.css';
 
@@ -9,7 +9,10 @@ function Blog() {
   const [loading, setLoading] = useState(true);
   const [isReversed, setIsReversed] = useState(true); // default reversed, zoals je eerder had
   const [tags,setTags] = useState<string[]>([]);
-  const [selectedTag, setSelectedTag] = useState<string | null>(null);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const urlTag = searchParams.get('tag');
+
+
 
   useEffect(() => {
     fetch('/data/blogs.json')
@@ -35,16 +38,18 @@ function Blog() {
   }, []);
 
   useEffect(() => {
-    if (selectedTag) {
-      const filtered = items.filter(
-        (item) => item.tags && item.tags.includes(selectedTag)
-      );
-      setFilteredItems(filtered);
-    } else {
-      // als geen tag geselecteerd, toon alles
-      setFilteredItems(items);
-    }
-  }, [selectedTag, items]);
+  if (urlTag) {
+    const filtered = items.filter(
+      (item) => item.tags && item.tags.includes(urlTag)
+    );
+    setFilteredItems(filtered);
+  } else {
+    setFilteredItems(items);
+  }
+}, [urlTag, items]);
+
+
+ 
 
   if (loading) return <p className="loading">Loading blogs...</p>;
 
@@ -65,11 +70,14 @@ function Blog() {
          <div className='tag-container-buttons'>
           {
           tags.map((tag, index) => (
-            <button key={index} className="tag-button" onClick={()=>setSelectedTag(tag)}>
+            <button key={index} className="tag-button" onClick={()=>setSearchParams({tag})}>
               {tag}
             </button>
           ))
         }
+         </div>
+         <div>
+          <button className='reset-tags' onClick={()=>setSearchParams({})}>toon alles</button>
          </div>
         
       </div>
