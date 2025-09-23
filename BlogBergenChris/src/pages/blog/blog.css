@@ -24,12 +24,33 @@
 }
 
 .blog-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centrum uitlijning */
+  text-align: center;  /* tekst in het midden */
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  background-color: #e6f2f5;
+}
+
+.blog-item-detail{
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 1.5rem;
   margin-bottom: 2rem;
   background-color: #f0f8ff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* optioneel: ruimte tussen de rijen */
+}
+
+.blog-item-detail div {
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
 }
 
 .blog-link {
@@ -58,17 +79,20 @@
 }
 
 .blog-metrics {
+  width: 50%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 2rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
+  box-sizing: border-box;
 }
+
 
 .metric {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* centreren van label, progress, span/p */
 }
 
 .metric li{
@@ -85,7 +109,8 @@
 }
 
 .metric progress {
-  width: 150px;
+  width: 100%;
+  max-width: 200px;
   height: 1rem;
   margin-bottom: 0.3rem;
 }

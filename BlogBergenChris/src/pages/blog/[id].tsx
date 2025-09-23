@@ -28,9 +28,12 @@ function BlogById() {
   return (
     <div className="blog-page-container">
       <article className="blog-item">
-        <h1>{blog.title}</h1>
+        <div>
+          <h1>{blog.title}</h1>
         <p className="blog-date"><strong>Datum:</strong> {blog.date}</p>
         <p className="blog-description">{blog.description}</p>
+        </div>
+        
 
         <div className="blog-metrics">
           <div className="metric">
@@ -44,8 +47,8 @@ function BlogById() {
             <span>{blog.motivation}/10</span>
           </div>
         </div>
-
-        {blog.pos.length > 0 && (
+        <div>
+           {blog.pos.length > 0 && (
           <>
             <h3>✅ Positieve punten</h3>
             <ul className="pos-neg-list">
@@ -62,6 +65,9 @@ function BlogById() {
             </ul>
           </>
         )}
+        </div>
+
+       
       </article>
     </div>
   );

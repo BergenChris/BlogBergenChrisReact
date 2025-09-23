@@ -38,14 +38,15 @@ function Blog() {
       <ul className="blog-list">
         {displayItems.map((item) => (
           <li key={item.id} className="blog-item">
-            <h3>
+            <div>
+               <h3>
               <Link to={`/blog/${item.id}`} className="blog-link">
                 {item.title}
               </Link>
-            </h3>
-            <p className="blog-date"><strong>Datum:</strong> {item.date}</p>
-            <p className="blog-description">{item.description}</p>
-
+              </h3>
+              <p className="blog-date"><strong>Datum:</strong> {item.date}</p>
+              <p className="blog-description">{item.description}</p>
+            </div>
             <div className="blog-metrics">
               <div className="metric">
                 <label>Stress:</label>
@@ -57,6 +58,8 @@ function Blog() {
                 <progress max={10} value={item.motivation}></progress>
                 <span>{item.motivation}/10</span>
               </div>
+            </div>
+            <div className="blog-metrics">
               <div className="metric">
                 <label>Pos:</label>
                 <p style={{ color: 'green' }}>{item.pos.length}</p>

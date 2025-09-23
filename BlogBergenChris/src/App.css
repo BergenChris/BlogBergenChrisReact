@@ -40,15 +40,23 @@
 }
 /* Navbar wrapper is invisible but needed for structure */
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  color: white;
+}
+
+.navbar nav{
+  width: 75%;
+ 
 }
 
 /* 🔹 Shared dropdown width */
 :root {
-  --menu-width: 150px;
+  --menu-width: 100%;
 }
 
 /* 🔹 Hamburger Button */
@@ -72,9 +80,7 @@
   border-radius: 6px; /* only top corners rounded */text-align: left;
 }
 
-
 .hamburger.open {
-  width: var(--menu-width);
   box-sizing: border-box;
   border-radius: 6px 6px 0 0;
   
@@ -83,33 +89,76 @@
 
 /* 🔹 Dropdown Menu */
 .nav-menu {
-  display: inline-block;
+  position: fixed;
+  top:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   color: white;
   text-align: left;
   visibility: hidden;
 }
+.nav-menu a{
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  transition: background-color 0.2s ease;
+}
 
 .nav-menu.open {
-  position: absolute;
   visibility: visible;
-  top: 3.5rem;
-  left: 1rem;
-  width: var(--menu-width);
+  top: 5px;
+  width: 100%;
   background-color: #006699;
   padding: 1rem;
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  flex-direction: row;
+  justify-content: space-around; /* items mooi gecentreerd */
+  gap: 1rem; /* ruimte tussen de links */
   z-index: 1000;
-  text-align: left;
-
-  border: none; /* remove border to avoid extra width */
-  border-radius: 0 0 6px 6px; /* only bottom corners rounded */
-
-  
-
+  text-align: center;
+  border: none;
+  border-radius: 8px;
   box-sizing: border-box;
 }
+.nav-menu.open a {
+ margin-left: 100px;
+}
+
+
+@media (max-width: 768px) {
+  .nav-menu.open {
+    position: absolute;
+    visibility: visible;
+    top: 3.5rem;
+    left: 1rem;
+    width: var(--menu-width);
+    background-color: #006699;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    z-index: 1000;
+    text-align: left;
+    border: none; /* remove border to avoid extra width */
+    border-radius: 0 0 6px 6px; /* only bottom corners rounded */
+    box-sizing: border-box;
+  }
+  :root {
+  --menu-width: 150px;
+  }
+  .nav-menu.open a {
+  margin-left: 10px;
+  }
+  .hamburger.open {
+  box-sizing: border-box;
+  border-radius: 6px 6px 0 0;
+  width: var(--menu-width);
+  
+  }
+}
+
 .nav-menu.open a {
   color: white;
   text-decoration: none;
