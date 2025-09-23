@@ -92,6 +92,8 @@ main {
   flex-direction: column; /* 2 rijen onder elkaar */
   gap: 1.5rem; /* wat ruimte tussen de secties */
   padding: 1rem;
+  border-radius: 8px;;
+  margin-bottom: 1rem;
 }
 
 main section {
@@ -114,4 +116,14 @@ main section {
 
 .blog-title img {
   height: 1.5em;
+}
+body{
+  /* background-image: url("/enterprise-resource-planning-holographic-interface.jpg");*/
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  border-radius: 15px;;
 }

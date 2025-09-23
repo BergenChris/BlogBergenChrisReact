@@ -82,15 +82,7 @@ html{
   margin: 0;
   padding: 0;
 }
-html{
-  /* background-image: url("/enterprise-resource-planning-holographic-interface.jpg");*/
-  background-image: url("/data/background/customer-relationship-management-concept.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  height: 100vh;
-}
+
 
 
 

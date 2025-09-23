@@ -133,17 +133,6 @@
   border-bottom: 5px solid rgba(161, 204, 240, 0.5);
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .loading {
   text-align: center;
   font-style: italic;
@@ -168,6 +157,16 @@
 .order:focus {
   outline: 2px solid #0056b3;    
   outline-offset: 2px;
+}
+body{
+  /* background-image: url("/enterprise-resource-planning-holographic-interface.jpg");*/
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  border-radius: 15px;;
 }
 
 
