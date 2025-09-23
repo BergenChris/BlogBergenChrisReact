@@ -129,7 +129,7 @@
 
 @media (max-width: 768px) {
   .nav-menu.open {
-    position: absolute;
+
     visibility: visible;
     top: 3.5rem;
     left: 1rem;
