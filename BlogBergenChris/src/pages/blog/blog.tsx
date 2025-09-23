@@ -5,6 +5,7 @@ import './blog.css';
 
 function Blog() {
   const [items, setItems] = useState<BlogItem[]>([]);
+  const [filteredItems, setFilteredItems] = useState<BlogItem[]>(items);
   const [loading, setLoading] = useState(true);
   const [isReversed, setIsReversed] = useState(true); // default reversed, zoals je eerder had
   const [tags,setTags] = useState<string[]>([]);
@@ -15,6 +16,7 @@ function Blog() {
       .then((res) => res.json())
       .then((data) => {
         setItems(data.blogs);
+        setFilteredItems(data.blogs);
 
         const allTags = new Set<string>(); //set zorgt dat er geen dubbele tags zijn
         data.blogs.forEach((blog: BlogItem) => {
@@ -33,15 +35,21 @@ function Blog() {
   }, []);
 
   useEffect(() => {
-  const filteredBlogs = [...items].filter(item => item.tags && selectedTag != null && item.tags.includes(selectedTag));
-  setItems(filteredBlogs)
-
-   }, [selectedTag]);
+    if (selectedTag) {
+      const filtered = items.filter(
+        (item) => item.tags && item.tags.includes(selectedTag)
+      );
+      setFilteredItems(filtered);
+    } else {
+      // als geen tag geselecteerd, toon alles
+      setFilteredItems(items);
+    }
+  }, [selectedTag, items]);
 
   if (loading) return <p className="loading">Loading blogs...</p>;
 
   // items gesorteerd afhankelijk van isReversed
-  const displayItems = isReversed ? [...items].reverse() : items;
+  const displayItems = isReversed ? [...filteredItems].reverse() : filteredItems;
 
   return (
     <div className="blog-page-container">
