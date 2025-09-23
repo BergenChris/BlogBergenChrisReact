@@ -28,7 +28,7 @@
   flex-direction: column;
   align-items: center; /* centrum uitlijning */
   text-align: center;  /* tekst in het midden */
-  padding: 2rem;
+  padding: 10%;
   border: 1px solid #ccc;
   border-radius: 8px;
   margin-bottom: 2rem;
@@ -76,6 +76,8 @@
   margin-bottom: 1rem;
   font-size: 1.05rem;
   line-height: 1.5;
+  padding: 0 10%;
+  text-align: center;
 }
 
 .blog-metrics {
@@ -126,32 +128,19 @@
   margin: 0.5rem 0 1rem 0;
 }
 
-
-.positive {
-  color: green;
-  padding-left: 2rem;
-  position: relative;
-}
-
-.positive::before {
-  content: '–'; 
-  margin-right: 0.5rem;
-  color: green;
+.pos-neg-list li {
+  
+  border-bottom: 5px solid rgba(161, 204, 240, 0.5);
 }
 
 
-.negative {
-  color: red;
-  padding-left: 1rem;
-  position: relative;
-}
 
 
-.negative::before {
-  content: '–'; 
-  margin-right: 0.5rem;
-  color: red;
-}
+
+
+
+
+
 
 
 

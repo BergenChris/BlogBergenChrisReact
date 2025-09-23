@@ -39,6 +39,7 @@ function Blog() {
         {displayItems.map((item) => (
           <li key={item.id} className="blog-item">
             <div>
+              <img src={`/data/blogPictures/img${item.id}.png`} style={{ width: '40%' }} onError={(e) => (e.currentTarget.style.display = 'none')}/>
                <h3>
               <Link to={`/blog/${item.id}`} className="blog-link">
                 {item.title}

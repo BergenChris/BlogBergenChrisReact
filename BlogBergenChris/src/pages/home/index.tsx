@@ -52,7 +52,7 @@ export default function HomePage() {
         <h1 className="blog-title">
           <div>
             Welkom bij mijn Blog @ 
-            <img src="/logoDeskDrive.svg" alt="logo DeskDrive" />
+            <img src="./../../public/data/logo/logoDeskDrive.svg" alt="logo DeskDrive" />
           </div>
         </h1>
         <p>Fijn dat je hier bent! Dit is mijn plek om alles te delen over mijn stage: wat ik meemaak, wat ik leer en de dingen die ik tegenkom onderweg. Of je nu mentor, begeleider bent, of gewoon nieuwsgierig, hier vind je mijn persoonlijke verhalen, ervaringen en handige tips die ik onderweg verzamel.</p>

@@ -29,6 +29,9 @@ function BlogById() {
     <div className="blog-page-container">
       <article className="blog-item">
         <div>
+          <img src={`/data/blogPictures/img${id}.png`} style={{ width: '75%' }} onError={(e) => (e.currentTarget.style.display = 'none')}/>
+        </div>
+        <div>
           <h1>{blog.title}</h1>
         <p className="blog-date"><strong>Datum:</strong> {blog.date}</p>
         <p className="blog-description">{blog.description}</p>
@@ -50,7 +53,7 @@ function BlogById() {
         <div>
            {blog.pos.length > 0 && (
           <>
-            <h3>✅ Positieve punten</h3>
+            <h3>Positieve punten</h3>
             <ul className="pos-neg-list">
               {blog.pos.map((p, i) => <li key={`pos-${i}`} className="positive">{p}</li>)}
             </ul>
@@ -59,7 +62,7 @@ function BlogById() {
 
         {blog.neg.length > 0 && (
           <>
-            <h3>❌ Negatieve punten</h3>
+            <h3>Negatieve punten</h3>
             <ul className="pos-neg-list">
               {blog.neg.map((n, i) => <li key={`neg-${i}`} className="negative">{n}</li>)}
             </ul>
