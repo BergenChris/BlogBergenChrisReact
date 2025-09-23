@@ -12,34 +12,15 @@
         },
         {
             "id": 2,
-            "date":"2025-09-25",
-            "title": "Tweede week",
-            "description": "De tweede week was al iets productiever. Ik heb al een paar kleine taken kunnen uitvoeren en ook al wat meer kennis van de programmeertalen.",
-            "pos":["meer kennis van programmeertalen, kleine taken kunnen uitvoeren"],
-            "neg":["soms nog steeds weinig kennis, dus veel moeten vragen"],
-            "stress": 5,
+            "date":"2025-09-23",
+            "title": "Start van de tweede week",
+            "description": "Start van interne procedure / opleiding. Leren werken met de software. Demo / testdomein gekregen om in te werken.",
+            "pos":["hands on leren werken", "effectieve code bekeken","start project AI integratie"],
+            "neg":["drukke periode voor collegas, dus weinig vragen durven strellen", "niet de reële omgeving, dus nog steeds iddues"],
+            "stress": 2,
             "motivation": 7
-        },
-        {
-            "id": 3,
-            "date":"2025-10-02",
-            "title": "Derde week",
-            "description": "De derde week was al veel productiever. Ik heb al een paar grotere taken kunnen uitvoeren en ook al wat meer kennis van de programmeertalen.",
-            "pos":["veel meer kennis van programmeertalen, grotere taken kunnen uitvoeren"],
-            "neg":["soms nog steeds weinig kennis, dus veel moeten vragen"],
-            "stress": 6,
-            "motivation": 6
-        },
-        {
-            "id": 4,
-            "date":"2025-10-09",
-            "title": "Vierde week",
-            "description": "De vierde week was al heel productief. Ik heb al een paar grote taken kunnen uitvoeren en ook al veel kennis van de programmeertalen.",
-            "pos":["heel veel kennis van programmeertalen, grote taken kunnen uitvoeren"],
-            "neg":["soms nog steeds weinig kennis, dus veel moeten vragen"],
-            "stress": 7,
-            "motivation": 5
         }
+     
 
 
     ]
