@@ -7,7 +7,7 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <BrowserRouter>
