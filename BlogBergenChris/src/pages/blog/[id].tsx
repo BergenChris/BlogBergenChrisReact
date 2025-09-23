@@ -1,19 +1,27 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import type { BlogItem } from '../../types';
 import './blog.css'; // Reuse dezelfde CSS als BlogPage
 
 function BlogById() {
   const { id } = useParams<{ id: string }>();
-  const [blog, setBlog] = useState<BlogItem | null>(null);
+  const [blogs,setBlogs] = useState<BlogItem[]>([]);
+  const [blogById, setBlogById] = useState<BlogItem | null>(null);
   const [loading, setLoading] = useState(true);
+
+  const currentIndex = blogs.findIndex(b => b.id === Number(id));
+  const hasPrevious = currentIndex > 0;
+  const hasNext = currentIndex < blogs.length - 1;
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch('/data/blogs.json')
       .then(res => res.json())
       .then(data => {
+        setBlogs(data.blogs);
         const found = data.blogs.find((b: BlogItem) => b.id === Number(id));
-        setBlog(found || null);
+        setBlogById(found || null);
         setLoading(false);
       })
       .catch(err => {
@@ -23,7 +31,21 @@ function BlogById() {
   }, [id]);
 
   if (loading) return <p className="loading">Loading blog...</p>;
-  if (!blog) return <p className="no-blogs">Blog niet gevonden.</p>;
+  if (!blogById) return <p className="no-blogs">Blog niet gevonden.</p>;
+
+  const handlePrevious = () => {
+    if (hasPrevious) {
+      const prevId = blogs[currentIndex - 1].id;
+      navigate(`/blog/${prevId}`);
+    }
+  };
+
+  const handleNext = () => {
+    if (hasNext) {
+      const nextId = blogs[currentIndex + 1].id;
+      navigate(`/blog/${nextId}`);
+    }
+  };
 
   return (
     <div className="blog-page-container">
@@ -32,39 +54,39 @@ function BlogById() {
           <img src={`/data/blogPictures/img${id}.png`} style={{ width: '75%' }} onError={(e) => (e.currentTarget.style.display = 'none')}/>
         </div>
         <div>
-          <h1>{blog.title}</h1>
-        <p className="blog-date"><strong>Datum:</strong> {blog.date}</p>
-        <p className="blog-description">{blog.description}</p>
+          <h1>{blogById.title}</h1>
+        <p className="blog-date"><strong>Datum:</strong> {blogById.date}</p>
+        <p className="blog-description">{blogById.description}</p>
         </div>
         
 
         <div className="blog-metrics">
           <div className="metric">
             <label>Stress:</label>
-            <progress max={10} value={blog.stress}></progress>
-            <span>{blog.stress}/10</span>
+            <progress max={10} value={blogById.stress}></progress>
+            <span>{blogById.stress}/10</span>
           </div>
           <div className="metric">
             <label>Motivatie:</label>
-            <progress max={10} value={blog.motivation}></progress>
-            <span>{blog.motivation}/10</span>
+            <progress max={10} value={blogById.motivation}></progress>
+            <span>{blogById.motivation}/10</span>
           </div>
         </div>
         <div>
-           {blog.pos.length > 0 && (
+           {blogById.pos.length > 0 && (
           <>
             <h3>Positieve punten</h3>
             <ul className="pos-neg-list">
-              {blog.pos.map((p, i) => <li key={`pos-${i}`} className="positive">{p}</li>)}
+              {blogById.pos.map((p, i) => <li key={`pos-${i}`} className="positive">{p}</li>)}
             </ul>
           </>
         )}
 
-        {blog.neg.length > 0 && (
+        {blogById.neg.length > 0 && (
           <>
             <h3>Negatieve punten</h3>
             <ul className="pos-neg-list">
-              {blog.neg.map((n, i) => <li key={`neg-${i}`} className="negative">{n}</li>)}
+              {blogById.neg.map((n, i) => <li key={`neg-${i}`} className="negative">{n}</li>)}
             </ul>
           </>
         )}
@@ -72,6 +94,14 @@ function BlogById() {
 
        
       </article>
+      <div className='nav-buttons'>
+        {hasPrevious && (
+          <button onClick={handlePrevious}>Vorige</button>
+        )}
+        {hasNext && (
+          <button onClick={handleNext}>Volgende</button>
+        )}
+      </div>
     </div>
   );
 }

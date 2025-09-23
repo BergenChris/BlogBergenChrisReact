@@ -18,9 +18,20 @@
             "description": "Start van interne procedure / opleiding. Leren werken met de software. Demo / testdomein gekregen om in te werken.",
             "pos":["hands on leren werken", "effectieve code bekeken","start project AI integratie"],
             "neg":["drukke periode voor collegas, dus weinig vragen durven strellen", "niet de reële omgeving, dus nog steeds iddues"],
-            "stress": 2,
+            "stress": 3,
             "motivation": 7,
             "tags": ["IntelliJ", "API", "AI","Beginnen van 0" ]  
+        },
+        {
+            "id": 3,
+            "date":"2025-09-30",
+            "title": "Derde week, eerste echte taken",
+            "description": "Eerste echte taken gekregen. Kleine bugs oplossen en kleine features toevoegen.",
+            "pos":["echt gevoel van bijdragen", "meer vertrouwen in eigen kunnen", "eerste keer code review gehad"],
+            "neg":["sommige bugs waren moeilijker dan verwacht", "tijdsdruk door deadlines"],
+            "stress": 5,
+            "motivation": 9,
+            "tags": ["Bugfixing", "Code Review", "Eerste taken" ]
         }
      
 
