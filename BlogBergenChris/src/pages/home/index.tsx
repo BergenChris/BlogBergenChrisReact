@@ -8,7 +8,7 @@ export default function HomePage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/data/blogs.json')
+    fetch('https://raw.githubusercontent.com/BergenChris/BlogBergenChrisReact/refs/heads/main/BlogBergenChris/public/data/blogs.json')
       .then((res) => res.json())
       .then((data) => {
         setItems(data.blogs);

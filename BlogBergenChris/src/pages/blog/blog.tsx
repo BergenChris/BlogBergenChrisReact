@@ -13,7 +13,7 @@ function Blog() {
   const urlTag = searchParams.get('tag');
 
   useEffect(() => {
-    fetch('/data/blogs.json')
+    fetch('https://raw.githubusercontent.com/BergenChris/BlogBergenChrisReact/refs/heads/main/BlogBergenChris/public/data/blogs.json')
       .then((res) => res.json())
       .then((data) => {
         setItems(data.blogs);
