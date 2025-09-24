@@ -7,12 +7,10 @@ function Blog() {
   const [items, setItems] = useState<BlogItem[]>([]);
   const [filteredItems, setFilteredItems] = useState<BlogItem[]>(items);
   const [loading, setLoading] = useState(true);
-  const [isReversed, setIsReversed] = useState(true); // default reversed, zoals je eerder had
+  const [isReversed, setIsReversed] = useState(true); 
   const [tags,setTags] = useState<string[]>([]);
   const [searchParams, setSearchParams] = useSearchParams();
   const urlTag = searchParams.get('tag');
-
-
 
   useEffect(() => {
     fetch('/data/blogs.json')
@@ -48,12 +46,7 @@ function Blog() {
   }
 }, [urlTag, items]);
 
-
- 
-
   if (loading) return <p className="loading">Loading blogs...</p>;
-
-  // items gesorteerd afhankelijk van isReversed
   const displayItems = isReversed ? [...filteredItems].reverse() : filteredItems;
 
   return (
@@ -64,7 +57,6 @@ function Blog() {
           {isReversed ? 'Eerste → Laatste':'Laatste → Eerste'} 
         </button>
       </header>
-    
       <div className='tag-container'>
          <h2>tags:</h2>
          <div className='tag-container-buttons'>
@@ -79,9 +71,7 @@ function Blog() {
          <div>
           <button className='reset-tags' onClick={()=>setSearchParams({})}>toon alles</button>
          </div>
-        
       </div>
-
       <ul className="blog-list">
         {displayItems.map((item) => (
           <li key={item.id} className="blog-item">
@@ -107,11 +97,11 @@ function Blog() {
                 <span>{item.motivation}/10</span>
               </div>
             </div>
-            <div className='blog-metrics'>
+            <div className='blog-metrics-container-tags'>
                 {
                   item.tags && item.tags.length > 0 && item.tags.map((tag, index) => (
-                    <div className="blog-metrics-tags">
-                    <button key={index} className="tag-button">
+                    <div>
+                    <button key={index} className="tag-button" onClick={()=>{setSearchParams({tag})}}>
                       {tag}
                     </button>
                     </div>
@@ -119,8 +109,6 @@ function Blog() {
                   ))
                 }
             </div>
-         
-            
           </li>
         ))}
       </ul>

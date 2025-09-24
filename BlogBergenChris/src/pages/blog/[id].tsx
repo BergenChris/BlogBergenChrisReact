@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import type { BlogItem } from '../../types';
-import './blog.css'; // Reuse dezelfde CSS als BlogPage
+import './blog.css';
 
 function BlogById() {
   const { id } = useParams<{ id: string }>();
@@ -63,6 +63,9 @@ function BlogById() {
         </div>
         <div>
           <img src={`/data/blogPictures/img${id}.png`} style={{ width: '75%' }} onError={(e) => (e.currentTarget.style.display = 'none')}/>
+          <img src={`/data/blogPictures/img${id}.jpeg`} style={{ width: '75%' }} onError={(e) => (e.currentTarget.style.display = 'none')}/>
+          <img src={`/data/blogPictures/img${id}.svg`} style={{ width: '75%' }} onError={(e) => (e.currentTarget.style.display = 'none')}/>
+
         </div>
         <div>
           <h1>{blogById.title}</h1>

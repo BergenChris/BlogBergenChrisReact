@@ -26,8 +26,8 @@
 .blog-item {
   display: flex;
   flex-direction: column;
-  align-items: center; /* centrum uitlijning */
-  text-align: center;  /* tekst in het midden */
+  align-items: center; 
+  text-align: center;  
   padding: 10%;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -44,7 +44,7 @@
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   display: flex;
   flex-direction: column;
-  gap: 1.5rem; /* optioneel: ruimte tussen de rijen */
+  gap: 1.5rem; 
 }
 
 .blog-item-detail div {
@@ -81,7 +81,7 @@
 }
 
 .blog-metrics {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -98,7 +98,7 @@
 .metric {
   display: flex;
   flex-direction: column;
-  align-items: center; /* centreren van label, progress, span/p */
+  align-items: center; 
 }
 
 .metric li{
@@ -163,8 +163,6 @@
   outline-offset: 2px;
 }
 body{
-  /* background-image: url("/enterprise-resource-planning-holographic-interface.jpg");*/
-
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -182,14 +180,14 @@ body{
 }
 
 .tag-container-buttons {
-  display: flex;
-  flex-wrap: wrap;              /* Zorgt dat buttons naar een nieuwe regel gaan als ze niet passen */
-  justify-content: space-around; /* Verspreid buttons gelijkmatig over de breedte */
-  align-items: center;  
-  gap:20px 50px;        /* Verticaal centreren van buttons in de rij */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-items: center;            
+  align-items: center;              
+  gap:20px 50px;                    
   max-width: 100%;
   overflow: hidden;
-  margin-bottom: 20px;           /* Ruimte onder de container */
+  margin-bottom: 20px;             
 }
 
 .tag-container h2{
@@ -204,7 +202,7 @@ body{
   cursor: pointer;
   font-size: 14px;
   transition: background-color 0.3s ease;
-  width: auto;
+  width: 150px;
 }
 .tag-button-id{
   background-color: #006699;
@@ -232,6 +230,22 @@ body{
   height: 80%;
 
 }
+
+.blog-metrics-container-tags{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem 0;
+  box-sizing: border-box;
+}
+.blog-metrics-container-tags div{
+  width: 150px;;
+}
+
 
 
 

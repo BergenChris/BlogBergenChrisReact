@@ -1,4 +1,4 @@
-/* homepage.css */
+
 
 .home-container {
   max-width: 100%;
@@ -48,10 +48,10 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   transition: box-shadow 0.3s ease;
 
-  display: flex;               /* make flex container */
-  flex-direction: column;     /* stack children vertically */
-  align-items: center;        /* center children horizontally */
-  text-align: center;         /* center inline text inside children */
+  display: flex;               
+  flex-direction: column;    
+  align-items: center;        
+  text-align: center;       
 }
 
 .home-item:hover {
@@ -89,15 +89,15 @@
 }
 main {
   display: flex;
-  flex-direction: column; /* 2 rijen onder elkaar */
-  gap: 1.5rem; /* wat ruimte tussen de secties */
+  flex-direction: column; 
+  gap: 1.5rem; 
   padding: 1rem;
   border-radius: 8px;;
   margin-bottom: 1rem;
 }
 
 main section {
-  /* elke sectie neemt volledige breedte */
+
   width: 100%;
 }
 .blog-title {
@@ -110,7 +110,7 @@ main section {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  flex-wrap: wrap; /* zorgt dat ze onder elkaar gaan bij kleine breedte */
+  flex-wrap: wrap; 
   text-align: center;
 }
 
@@ -118,8 +118,6 @@ main section {
   height: 1.5em;
 }
 body{
-  /* background-image: url("/enterprise-resource-planning-holographic-interface.jpg");*/
-
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

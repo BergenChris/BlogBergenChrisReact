@@ -12,15 +12,9 @@ function LatestBlogRedirect() {
         const blogs: BlogItem[] = data.blogs;
 
         if (blogs.length > 0) {
-          // Option 1: Last blog in array
           const latestBlog = blogs[blogs.length - 1];
-
-          // Option 2: Or find highest ID (if order is uncertain)
-          // const latestBlog = blogs.reduce((prev, curr) => (curr.id > prev.id ? curr : prev));
-
           navigate(`/blog/${latestBlog.id}`);
         } else {
-          // No blogs? Go back to blog list or homepage
           navigate('/blog');
         }
       })

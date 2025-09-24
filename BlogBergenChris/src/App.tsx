@@ -11,8 +11,7 @@ function App() {
   const [backgroundToggled, setBackgroundToggled] = useState(false);
   
   useEffect(() => {
-    const timestamp = new Date().getTime(); // to force reload
-    // Apply background depending on toggle state
+    const timestamp = new Date().getTime(); 
     const html = document.documentElement;
     html.style.backgroundImage = backgroundToggled
       ? `url('/data/background/background1.jpg?t=${timestamp}')`
@@ -22,7 +21,6 @@ function App() {
 
   return (
     <BrowserRouter>
-      {/* Fixed Hamburger and Menu */}
       <header className="navbar">
         <button
            className={`hamburger ${menuOpen ? 'open' : ''}`}
@@ -41,7 +39,7 @@ function App() {
         
       </header>
 
-      {/* App Routes */}
+
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/blog" element={<BlogBergenChris />} />

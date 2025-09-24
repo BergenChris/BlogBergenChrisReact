@@ -28,7 +28,7 @@ export default function HomePage() {
   const newest = reversed[0];
   const rest = reversed.slice(1);
 
-  // Functie om N willekeurige unieke items te kiezen uit een array
+
   function getRandomItems<T>(arr: T[], n: number): T[] {
     const result: T[] = [];
     const taken = new Set<number>();
@@ -43,7 +43,7 @@ export default function HomePage() {
     return result;
   }
 
-  // Pak 2 random uit rest (of minder als er minder zijn)
+
   const randomOthers = getRandomItems(rest, 2);
 
   return (
@@ -61,7 +61,7 @@ export default function HomePage() {
       </header>
 
       <main>
-        {/* Laatste blog apart */}
+      
         <section className="latest-blog">
           <h2>Laatste blog</h2>
           <article className="home-item" key={newest.id}>
@@ -72,7 +72,7 @@ export default function HomePage() {
           </article>
         </section>
 
-        {/* Twee random blogs apart */}
+       
         {randomOthers.length > 0 && (
           <section className="random-blogs">
             <h2>Andere blogs</h2>
