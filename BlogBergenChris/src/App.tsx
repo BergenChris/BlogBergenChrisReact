@@ -5,6 +5,7 @@ import BlogBergenChris from './pages/blog/blog';
 import BlogById from './pages/blog/[id]';
 import { useEffect, useState } from 'react';
 import './App.css';
+import Graph from './pages/graphs';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -45,6 +46,8 @@ function App() {
         <Route path="/blog" element={<BlogBergenChris />} />
         <Route path="/blog/:id" element={<BlogById />} />
         <Route path="/blog/latestblog" element={<LatestBlogRedirect />} />
+        <Route path="/graphs" element={<Graph/>}/>
+     
       </Routes>
       <button  onClick={()=> setBackgroundToggled(!backgroundToggled) }>Achtergrond 🔄</button>
     </BrowserRouter>

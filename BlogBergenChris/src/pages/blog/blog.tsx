@@ -87,14 +87,18 @@ function Blog() {
             </div>
             <div className="blog-metrics">
               <div className="metric">
-                <label>Stress:</label>
+                <Link to={`/graphs/stress`}>
+                  <p>Stress</p>
                 <progress max={10} value={item.stress}></progress>
                 <span>{item.stress}/10</span>
+                </Link>
               </div>
               <div className="metric">
-                <label>Motivatie:</label>
-                <progress max={10} value={item.motivation}></progress>
-                <span>{item.motivation}/10</span>
+                <Link to={`/graphs/motivation`}>
+                  <p>Motivatie</p>
+                  <progress max={10} value={item.motivation}></progress>
+                  <span>{item.motivation}/10</span>
+                  </Link>
               </div>
             </div>
             <div className='blog-metrics-container-tags'>

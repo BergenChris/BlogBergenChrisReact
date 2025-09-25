@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import type { BlogItem } from '../../types';
 import './blog.css';
 
@@ -75,17 +75,21 @@ function BlogById() {
         
 
         <div className="blog-metrics">
-          <div className="metric">
-            <label>Stress:</label>
-            <progress max={10} value={blogById.stress}></progress>
-            <span>{blogById.stress}/10</span>
-          </div>
-          <div className="metric">
-            <label>Motivatie:</label>
-            <progress max={10} value={blogById.motivation}></progress>
-            <span>{blogById.motivation}/10</span>
-          </div>
-        </div>
+              <div className="metric">
+                <Link to={`/graphs/stress`}>
+                  <p>Stress</p>
+                <progress max={10} value={blogById.stress}></progress>
+                <span>{blogById.stress}/10</span>
+                </Link>
+              </div>
+              <div className="metric">
+                <Link to={`/graphs/motivation`}>
+                  <p>Motivatie</p>
+                  <progress max={10} value={blogById.motivation}></progress>
+                  <span>{blogById.motivation}/10</span>
+                  </Link>
+              </div>
+            </div>
         <div>
            {blogById.pos.length > 0 && (
           <>
