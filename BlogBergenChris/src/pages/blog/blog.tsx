@@ -87,14 +87,14 @@ function Blog() {
             </div>
             <div className="blog-metrics">
               <div className="metric">
-                <Link to={`/graphs/stress`}>
+                <Link to={`/graphs`}>
                   <p>Stress</p>
                 <progress max={10} value={item.stress}></progress>
                 <span>{item.stress}/10</span>
                 </Link>
               </div>
               <div className="metric">
-                <Link to={`/graphs/motivation`}>
+                <Link to={`/graphs`}>
                   <p>Motivatie</p>
                   <progress max={10} value={item.motivation}></progress>
                   <span>{item.motivation}/10</span>

@@ -76,14 +76,14 @@ function BlogById() {
 
         <div className="blog-metrics">
               <div className="metric">
-                <Link to={`/graphs/stress`}>
+                <Link to={`/graphs`}>
                   <p>Stress</p>
                 <progress max={10} value={blogById.stress}></progress>
                 <span>{blogById.stress}/10</span>
                 </Link>
               </div>
               <div className="metric">
-                <Link to={`/graphs/motivation`}>
+                <Link to={`/graphs`}>
                   <p>Motivatie</p>
                   <progress max={10} value={blogById.motivation}></progress>
                   <span>{blogById.motivation}/10</span>
