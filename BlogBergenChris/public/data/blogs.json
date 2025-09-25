@@ -24,25 +24,14 @@
         },
         {
             "id": 3,
-            "date":"2025-09-30",
-            "title": "Derde week, eerste echte taken",
-            "description": "Eerste echte taken gekregen. Kleine bugs oplossen en kleine features toevoegen.",
-            "pos":["echt gevoel van bijdragen", "meer vertrouwen in eigen kunnen", "eerste keer code review gehad"],
-            "neg":["sommige bugs waren moeilijker dan verwacht", "tijdsdruk door deadlines"],
+            "date":"2025-09-25",
+            "title": "Onderzoek AI integratie",
+            "description": "Onderzoek gedaan naar mogelijke AI integratie in de software. Eigen optie helemaal uitgewerkt",
+            "pos":["betrokkenheid", "iets bruikbaar maken","resultaat zien"],
+            "neg":["veel foutmeldingen --> Chatgpt"],
             "stress": 5,
             "motivation": 9,
-            "tags": ["Bugfixing", "Code Review", "Eerste taken" ]
-        },
-        {
-            "id": 4,
-            "date":"2025-09-30",
-            "title": "Derde week, eerste echte taken",
-            "description": "Eerste echte taken gekregen. Kleine bugs oplossen en kleine features toevoegen.",
-            "pos":["echt gevoel van bijdragen", "meer vertrouwen in eigen kunnen", "eerste keer code review gehad"],
-            "neg":["sommige bugs waren moeilijker dan verwacht", "tijdsdruk door deadlines"],
-            "stress": 5,
-            "motivation": 9,
-            "tags": ["Bugfixing", "Code Review", "Eerste taken" ]
+            "tags": ["Code", "Building", "API", "AI"  ]
         }
      
 
