@@ -26,10 +26,9 @@ ChartJS.register(
 
 function Graph() {
   const [items, setItems] = useState<BlogItem[]>([]);
-  const [graphType, setGraphType] = useState<"motivation"|"stress">("motivation");
 
   const [loading, setLoading] = useState(true);
-  const otherGraphType = graphType === 'motivation' ? 'stress' : 'motivation';
+
 
 
   useEffect(() => {
@@ -45,9 +44,7 @@ function Graph() {
       });
   }, []);
 
-  const toggleGraph = () => {
-    setGraphType((prev) => (prev === 'motivation' ? 'stress' : 'motivation'));
-  };
+ 
 
 
   if (loading) return <p className="loading">Loading blogs...</p>;
@@ -56,42 +53,50 @@ function Graph() {
   return (
     <div className="graph-page-container">
         <header className="graph-header">
-            <h1>Grafiek {graphType} <a onClick={()=>setGraphType(otherGraphType)}>/{otherGraphType}</a></h1>
+            <h1>Grafiek Motivatie & Stress</h1>
         </header>       
         {items.length > 0 && (
             <div className="chart-container">
                 <Line
-                data={{
+                  data={{
                     labels: items.map((item) => `ID ${item.id}`),
                     datasets: [
-                    {
-                        label: graphType.toUpperCase(),
-                        data: items.map((item) => item[graphType]),
-                        borderColor: 'rgba(54, 162, 235, 1)',       // Blauw
-                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                      {
+                        label: 'Motivatie',
+                        data: items.map((item) => item.motivation),
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        backgroundColor: 'rgba(54, 162, 235, 1)',
                         tension: 0.3,
-                    },
+                      },
+                      {
+                        label: 'Stress',
+                        data: items.map((item) => item.stress),
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        backgroundColor: 'rgba(255, 99, 132, 1)',
+                        tension: 0.3,
+                      },
                     ],
-                }}
-                options={{
+                  }}
+                  options={{
                     responsive: true,
                     plugins: {
-                    legend: {
+                      legend: {
                         position: 'top' as const,
-                    },
-                    title: {
+                      },
+                      title: {
                         display: true,
-                        text: 'Motivatie per Blog ID',
-                    },
+                        text: 'Motivatie en Stress per Blog ID',
+                      },
                     },
                     scales: {
-                    y: {
+                      y: {
                         beginAtZero: true,
-                        max: 10, // Pas aan op basis van je motivatie-schaal
+                        max: 10,
+                      },
                     },
-                    },
-                }}
+                  }}
                 />
+
             </div>
             )}
 
