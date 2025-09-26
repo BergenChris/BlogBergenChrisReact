@@ -10,8 +10,7 @@ import Graph from './pages/graphs';
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [backgroundToggled, setBackgroundToggled] = useState(false);
-  const [hideButton, setHideButton] = useState(false);
-  const [isSticky, setIsSticky] = useState(false);
+
 
   const contentRef = useRef<HTMLDivElement>(null);
 
@@ -25,34 +24,7 @@ function App() {
 
   }, [backgroundToggled]);
 
-  // Check of de inhoud korter is dan het vensterhoogte
-useEffect(() => {
-  const checkSticky = () => {
-    const contentHeight = contentRef.current?.offsetHeight || 0;
-    const windowHeight = window.innerHeight;
-    setIsSticky(contentHeight < windowHeight);
-  };
 
-  checkSticky();
-  window.addEventListener('resize', checkSticky);
-  return () => window.removeEventListener('resize', checkSticky);
-}, []);
-
-// Scroll detection
-useEffect(() => {
-  let timeoutId:NodeJs.Timeout;
-
-  const handleScroll = () => {
-    setHideButton(true);
-    clearTimeout(timeoutId);
-    timeoutId = setTimeout(() => {
-      setHideButton(false);
-    }, 1000);
-  };
-
-  window.addEventListener('scroll', handleScroll);
-  return () => window.removeEventListener('scroll', handleScroll);
-}, []);
 
 
   return (
