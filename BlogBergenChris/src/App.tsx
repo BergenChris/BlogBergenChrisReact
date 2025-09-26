@@ -12,7 +12,6 @@ function App() {
   const [backgroundToggled, setBackgroundToggled] = useState(false);
 
 
-  const contentRef = useRef<HTMLDivElement>(null);
 
   
   useEffect(() => {
