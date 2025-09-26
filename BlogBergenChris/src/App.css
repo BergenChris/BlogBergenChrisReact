@@ -74,7 +74,8 @@
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
-  width: auto;
+  width: 45px;
+  height: px;
   max-width: var(--menu-width);
   box-sizing: border-box;
   transition: width 0.3s ease;
@@ -140,20 +141,41 @@
   right: 1rem;
   background-color: #006699;
   color: white;
-  border: none;
-  padding: 0.6rem 1rem;
   border-radius: 6px;
   cursor: pointer;
   z-index: 1001;
-  transition: opacity 0.3s ease;
+  height: 45px;
+  transition: width 0.3s ease, padding 0.3s ease;
+
+  /* ➕ Belangrijk voor centreren */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.6rem 1rem;
+  width: auto;
 }
 
+.background-changer.hide-on-scroll {
+  width: 45px;
+  padding: 0.6rem;
+  justify-content: center; /* centreren van het icoon als tekst weg is */
+}
 
+.changer-text {
+  display: inline-block;
+  transition: opacity 0.3s ease, width 0.3s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: middle;
+}
 
-.background-changer.hidden {
+.changer-text.hide-on-scroll {
   opacity: 0;
+  width: 0;
   pointer-events: none;
 }
+
 
 .page-content {
   padding-bottom: 3rem; /* ruimte voor de knop */

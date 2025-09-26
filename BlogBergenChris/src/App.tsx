@@ -23,6 +23,32 @@ function App() {
 
   }, [backgroundToggled]);
 
+  useEffect(() => {
+  let lastScrollY = window.scrollY;
+
+  const handleScroll = () => {
+    const textSpan = document.querySelector('.changer-text');
+    const bgButton = document.querySelector('.background-changer');
+    if (!textSpan || !bgButton) return;
+
+    if (window.scrollY > lastScrollY) {
+      textSpan.classList.add('hide-on-scroll');   // verberg tekst
+      bgButton.classList.add('hide-on-scroll');   // smalle knop
+    } else {
+      textSpan.classList.remove('hide-on-scroll');
+      bgButton.classList.remove('hide-on-scroll');
+    }
+
+    lastScrollY = window.scrollY;
+  };
+
+  window.addEventListener('scroll', handleScroll);
+
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, []);
+
 
 
 
@@ -44,9 +70,10 @@ function App() {
         </nav>
         <button
           onClick={() => setBackgroundToggled(!backgroundToggled)}
-          className={`background-changer`}
+          className="background-changer"
         >
-          Achtergrond 🔄
+          <span className="changer-text">Achtergrond</span>
+          <span className="changer-icon">🔄</span>
         </button>
         
         
@@ -61,6 +88,7 @@ function App() {
         <Route path="/graphs" element={<Graph/>}/>
      
       </Routes>
+      
     
 
     </BrowserRouter>
