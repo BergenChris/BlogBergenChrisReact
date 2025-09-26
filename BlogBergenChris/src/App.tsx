@@ -3,7 +3,7 @@ import HomePage from './pages/home';
 import LatestBlogRedirect from './pages/blog/latestblog';
 import BlogBergenChris from './pages/blog/blog';
 import BlogById from './pages/blog/[id]';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Graph from './pages/graphs';
 
