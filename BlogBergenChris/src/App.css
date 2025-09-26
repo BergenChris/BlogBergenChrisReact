@@ -134,6 +134,32 @@
   display: inline-block;
 }
 
+.background-changer {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: #006699;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 1001;
+  transition: opacity 0.3s ease;
+}
+
+
+
+.background-changer.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.page-content {
+  padding-bottom: 3rem; /* ruimte voor de knop */
+}
+
+
 
 @media (max-width: 768px) {
   .nav-menu.open {
@@ -167,6 +193,8 @@
   
   }
 }
+
+
 
 
 

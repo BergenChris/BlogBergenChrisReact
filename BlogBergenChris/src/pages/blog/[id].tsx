@@ -113,6 +113,9 @@ function BlogById() {
        
       </article>
       <div className='nav-buttons'>
+         <Link to={`/graphs`} className='graph-link'>Grafiek</Link>
+      </div>
+      <div className='nav-buttons'>
         {hasPrevious && (
           <button onClick={handlePrevious}>Vorige</button>
         )}
