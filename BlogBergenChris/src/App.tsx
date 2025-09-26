@@ -90,12 +90,7 @@ useEffect(() => {
         <Route path="/graphs" element={<Graph/>}/>
      
       </Routes>
-      <button
-        onClick={() => setBackgroundToggled(!backgroundToggled)}
-        className={`background-changer`}
-      >
-        Achtergrond 🔄
-      </button>
+    
 
     </BrowserRouter>
   );
