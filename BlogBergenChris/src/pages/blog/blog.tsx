@@ -57,9 +57,12 @@ function Blog() {
           {isReversed ? 'Eerste → Laatste':'Laatste → Eerste'} 
         </button>
       </header>
+      
       <div className='tag-container'>
-         <h2>tags:</h2>
-         <div className='tag-container-buttons'>
+        <div>
+          <h2>tags:</h2>
+        </div>
+        <div className='tag-container-buttons'>
           {
           tags.map((tag, index) => (
             <button key={index} className="tag-button" onClick={()=>setSearchParams({tag})}>

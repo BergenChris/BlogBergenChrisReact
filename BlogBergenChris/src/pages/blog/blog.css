@@ -1,5 +1,3 @@
-
-
 .blog-page-container {
   max-width: 100%;
   padding: 5% 10% 0 10%;
@@ -257,6 +255,39 @@ body{
   width: 150px;;
 }
 
+@media (max-width: 768px) {
+  .tag-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .tag-container-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .tag-button {
+    font-size: 12px;
+    padding: 4px 8px;
+    min-width: 90px;
+    max-width: 110px;
+  }
+
+  .reset-tags {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    width: auto;
+    min-width: 100px;
+  }
+
+  .tag-container h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
 
 
 
