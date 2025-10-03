@@ -9,7 +9,7 @@
             "neg":["weinig kennis, dus veel moeten vragen en ook wachten, productiviteit was dus laag"],
             "stress": 4,
             "motivation": 8,
-            "tags": ["Windows", "Beginnen van 0", "fixed" ]
+            "tags": ["Windows", "Beginnen van 0", "Fixed" ]
         },
         {
             "id": 2,
@@ -42,7 +42,7 @@
             "neg":["tijdbesteding"," niet zelfstandig"],
             "stress": 6,
             "motivation": 10,
-            "tags": ["Code", "Testing", "templates", "Results"  ]
+            "tags": ["Code", "Testing", "Templates", "Results"  ]
         }
      
 
