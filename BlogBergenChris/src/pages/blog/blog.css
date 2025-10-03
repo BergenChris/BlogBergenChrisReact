@@ -333,3 +333,11 @@ body {
 .graph-link:hover {
   color: #99ccff;
 }
+
+.blog-image img{
+  width: 80%;
+  height: auto; /* Zorgt voor behoud van aspect ratio */
+  padding: 10px 0; /* 10px boven en onder, 0 links en rechts */
+  display: block;  /* Optioneel: voorkomt inline white space en maakt vertical margin/padding consistenter */
+  margin: 0 auto;  /* Centreert de afbeelding horizontaal */
+}

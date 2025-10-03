@@ -47,6 +47,20 @@ function BlogById() {
     }
   };
 
+  useEffect(() => {
+    const handleKeyDown = (event:any) => {
+      if (event.key === 'ArrowRight') {
+        handleNext();
+      }
+      if (event.key ==='ArrowLeft'){
+        handlePrevious();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
   return (
     <div className="blog-page-container">
       <article className="blog-item">
@@ -63,11 +77,10 @@ function BlogById() {
           )}
            </div>
         </div>
-        <div>
-          <img src={`/data/blogPictures/img${id}.png`} style={{ width: '75%' }} onError={(e) => (e.currentTarget.style.display = 'none')}/>
-          <img src={`/data/blogPictures/img${id}.jpeg`} style={{ width: '75%' }} onError={(e) => (e.currentTarget.style.display = 'none')}/>
-          <img src={`/data/blogPictures/img${id}.svg`} style={{ width: '75%' }} onError={(e) => (e.currentTarget.style.display = 'none')}/>
-
+        <div className='blog-image'>
+          <img src={`/data/blogPictures/img${id}.png`}  onError={(e) => (e.currentTarget.style.display = 'none')}/>
+          <img src={`/data/blogPictures/img${id}.jpeg`}  onError={(e) => (e.currentTarget.style.display = 'none')}/>
+          <img src={`/data/blogPictures/img${id}.svg`}  onError={(e) => (e.currentTarget.style.display = 'none')}/>
         </div>
         <div>
           <h1>{blogById.title}</h1>

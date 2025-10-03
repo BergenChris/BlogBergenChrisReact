@@ -81,6 +81,7 @@
   transition: width 0.3s ease;
   border-radius: 6px; 
   text-align: left;
+  height: 45px;
 }
 
 .hamburger.open {
@@ -124,6 +125,7 @@
   border: none;
   border-radius: 8px;
   box-sizing: border-box;
+  padding-right: 100px;
 }
 .nav-menu.open a {
  color: white;
@@ -168,6 +170,8 @@
   white-space: nowrap;
   overflow: hidden;
   vertical-align: middle;
+  color:rgb(215, 229, 241);
+  font-size: 80%;
 }
 
 .changer-text.hide-on-scroll {
