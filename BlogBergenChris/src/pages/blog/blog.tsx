@@ -108,7 +108,7 @@ function Blog() {
                 {
                   item.tags && item.tags.length > 0 && item.tags.map((tag, index) => (
                     <div>
-                    <button key={index} className="tag-button" onClick={()=>{setSearchParams({tag})}}>
+                    <button key={index} className="tag-button-blog" onClick={()=>{setSearchParams({tag})}}>
                       {tag}
                     </button>
                     </div>

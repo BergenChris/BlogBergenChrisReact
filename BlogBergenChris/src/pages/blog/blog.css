@@ -1,8 +1,9 @@
 .blog-page-container {
   max-width: 100%;
-  padding: 5% 10% 0 10%;
+  padding: 4% 5% 2% 5%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
+
   
 }
 
@@ -97,6 +98,14 @@
   display: flex;
   flex-direction: column;
   align-items: center; 
+  width: 40%;
+}
+
+.metric a{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .metric p{
@@ -127,6 +136,7 @@
   font-size: 0.9rem;
   color: #444;
 }
+
 
 .pos-neg-list {
   list-style: none;
@@ -277,12 +287,7 @@ body{
    
   }
 
-  .tag-button {
-    font-size: 12px;
-    padding: 4px 8px;
-    min-width: 90px;
-    max-width: 110px;
-  }
+  
 
   .reset-tags {
     font-size: 0.9rem;
@@ -295,9 +300,35 @@ body{
     font-size: 1.2rem;
     text-align: center;
   }
+  .blog-metrics{
+    margin:0;
+  }
 
-  .blog-metrics-container-tags{
-    gap:5px;
+  .metric{
+    width: 40%;
+  }
+
+  .metric a{
+    width: 100%;
+  }
+
+  .blog-metrics-container-tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 0;
+}
+.blog-metrics-container-tags div {
+    width: 120px;
+}
+
+ 
+  .tag-button-blog {
+    font-size: 12px;
+    padding: 4px 8px;
+    min-width: 90px;
+    max-width: 110px;
   }
 }
 
