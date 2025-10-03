@@ -32,6 +32,17 @@
             "stress": 5,
             "motivation": 9,
             "tags": ["Code", "Building", "API", "AI"  ]
+        },
+        {
+            "id": 4,
+            "date":"2025-10-03",
+            "title": "Selenium Testing en templates",
+            "description": "Bekijken en verbeteren deels aangemaakte selenium test door DeskDrive",
+            "pos":["resultaat", "inzetbaar","doel"],
+            "neg":["tijdbesteding"," niet zelfstandig"],
+            "stress": 6,
+            "motivation": 10,
+            "tags": ["Code", "Testing", "templates", "Results"  ]
         }
      
 
