@@ -36,10 +36,10 @@
         {
             "id": 4,
             "date":"2025-10-03",
-            "title": "Selenium Testing en templates",
-            "description": "Bekijken en verbeteren deels aangemaakte selenium test door DeskDrive",
-            "pos":["resultaat", "inzetbaar","doel"],
-            "neg":["tijdbesteding"," niet zelfstandig"],
+            "title": "Selenium Testing en Modules",
+            "description": "Eind 3de week heb ik me vooral beziggehouden met het afwerken van de (dev)modules gemaakt door DeskDrive en het oplossen en verder uitschrijven van een opstart project van Selenium Testing. Tegen vrijdag heb ik alle testen correct aangepast en nu wacht ik op feedback voor mijn werkwijze en verder opdrachten hierrond",
+            "pos":["resultaat is zichtbaar", "bijdrage aan het team"],
+            "neg":["tijdbesteding, sommige taken duren te lang"," niet zelfstandig kunnen werken"],
             "stress": 6,
             "motivation": 10,
             "tags": ["Code", "Testing", "Templates", "Results"  ]
