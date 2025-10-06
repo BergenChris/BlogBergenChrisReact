@@ -34,9 +34,12 @@ function App() {
     if (window.scrollY > lastScrollY) {
       textSpan.classList.add('hide-on-scroll');   // verberg tekst
       bgButton.classList.add('hide-on-scroll');   // smalle knop
+      setTimeout(()=>setMenuOpen(false),750);
+
     } else {
       textSpan.classList.remove('hide-on-scroll');
       bgButton.classList.remove('hide-on-scroll');
+    
     }
 
     lastScrollY = window.scrollY;
