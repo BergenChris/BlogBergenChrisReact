@@ -1,99 +1,88 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import HomePage from './pages/home';
-import LatestBlogRedirect from './pages/blog/latestblog';
-import BlogBergenChris from './pages/blog/blog';
-import BlogById from './pages/blog/[id]';
-import { useEffect, useState } from 'react';
-import './App.css';
-import Graph from './pages/graphs';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import HomePage from "./pages/home";
+import LatestBlogRedirect from "./pages/blog/latestblog";
+import BlogBergenChris from "./pages/blog/blog";
+import BlogById from "./pages/blog/[id]";
+import { useEffect, useState } from "react";
+import "./App.css";
+import Graph from "./pages/graphs";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(true);
   const [backgroundToggled, setBackgroundToggled] = useState(false);
 
-
-
-
-  
   useEffect(() => {
-    const timestamp = new Date().getTime(); 
+    const timestamp = new Date().getTime();
     const html = document.documentElement;
     const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
     if (isMobile) {
       // Always keep hidden and closed on mobile
       setMenuOpen(false);
-       html.style.backgroundImage = `url('/data/background/backgroundPhone.jpg?t=${timestamp}')`;
-    }
-    else{
+      html.style.backgroundImage = `url('/data/background/backgroundPhone.jpg?t=${timestamp}')`;
+    } else {
       html.style.backgroundImage = backgroundToggled
         ? `url('/data/background/background1.jpg?t=${timestamp}')`
-      : `url('/data/background/background2.jpg?t=${timestamp}')`;
-
+        : `url('/data/background/background2.jpg?t=${timestamp}')`;
     }
-
-    
   }, [backgroundToggled]);
 
   useEffect(() => {
+    const handleScroll = () => {
+      const textSpan = document.querySelector(".changer-text");
+      const bgButton = document.querySelector(".background-changer");
+      if (!textSpan || !bgButton) return;
 
+      // Mobile detection
+      const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
-  const handleScroll = () => {
-    const textSpan = document.querySelector('.changer-text');
-    const bgButton = document.querySelector('.background-changer');
-    if (!textSpan || !bgButton) return;
+      if (isMobile) {
+        // Always keep hidden and closed on mobile
+        textSpan.classList.add("hide-on-scroll");
+        bgButton.classList.add("hide-on-scroll");
+        setMenuOpen(false);
+        return; // Exit early
+      }
 
-    // Mobile detection
-    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+      if (window.scrollY === 0) {
+        setMenuOpen(true);
+        textSpan.classList.remove("hide-on-scroll");
+        bgButton.classList.remove("hide-on-scroll");
+      } else if (window.scrollY > 10) {
+        textSpan.classList.add("hide-on-scroll"); // verberg tekst
+        bgButton.classList.add("hide-on-scroll"); // smalle knop
+        setMenuOpen(false);
+      }
+    };
 
-    if (isMobile) {
-      // Always keep hidden and closed on mobile
-      textSpan.classList.add('hide-on-scroll');
-      bgButton.classList.add('hide-on-scroll');
-      setMenuOpen(false);
-      return; // Exit early
-    }
+    window.addEventListener("scroll", handleScroll);
 
-    if (window.scrollY === 0){
-      setMenuOpen(true);
-      textSpan.classList.remove('hide-on-scroll');
-      bgButton.classList.remove('hide-on-scroll');
-
-    }
-    else if (window.scrollY > 10) {
-      textSpan.classList.add('hide-on-scroll');   // verberg tekst
-      bgButton.classList.add('hide-on-scroll');   // smalle knop
-      setMenuOpen(false);
-    } 
-
-
-  };
-
-  window.addEventListener('scroll', handleScroll);
-
-  return () => {
-    window.removeEventListener('scroll', handleScroll);
-  };
-}, []);
-
-
-
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <BrowserRouter>
       <header className="navbar">
         <button
-           className={`hamburger ${menuOpen ? 'open' : ''}`}
-          onClick={() => setMenuOpen(prev => !prev)}
+          className={`hamburger ${menuOpen ? "open" : ""}`}
+          onClick={() => setMenuOpen((prev) => !prev)}
           aria-label="Toggle navigation"
         >
           ☰
         </button>
 
-        <nav className={`nav-menu ${menuOpen ? 'open' : ''}`}>
-          <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
-          <Link to="/blog" onClick={() => setMenuOpen(false)}>Blog Pagina</Link>
-          <Link to="/blog/latestblog" onClick={() => setMenuOpen(false)}>Laatste Blog</Link>
+        <nav className={`nav-menu ${menuOpen ? "open" : ""}`}>
+          <Link to="/" onClick={() => setMenuOpen(false)}>
+            Home
+          </Link>
+          <Link to="/blog" onClick={() => setMenuOpen(false)}>
+            Blog Pagina
+          </Link>
+          <Link to="/blog/latestblog" onClick={() => setMenuOpen(false)}>
+            Laatste Blog
+          </Link>
         </nav>
         <button
           onClick={() => setBackgroundToggled(!backgroundToggled)}
@@ -102,22 +91,15 @@ function App() {
           <span className="changer-text">Achtergrond</span>
           <span className="changer-icon">🔄</span>
         </button>
-        
-        
       </header>
 
-      
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/blog" element={<BlogBergenChris />} />
         <Route path="/blog/:id" element={<BlogById />} />
         <Route path="/blog/latestblog" element={<LatestBlogRedirect />} />
-        <Route path="/graphs" element={<Graph/>}/>
-     
+        <Route path="/graphs" element={<Graph />} />
       </Routes>
-      
-    
-
     </BrowserRouter>
   );
 }

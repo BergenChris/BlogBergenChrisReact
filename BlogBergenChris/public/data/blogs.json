@@ -1,51 +1,92 @@
 {
-    "blogs":[
+    "blogs": [
         {
             "id": 1,
-            "date":"2025-09-18",
+            "date": "2025-09-18",
             "title": "Startup week",
             "description": "De eerste dagen waren vooral kennis maken. Alles correct installeren en met de werking van het bedrijf en de programmas kennis maken. ",
-            "pos":["ervaring van echte werksfeer","leren werken met nieuwe programmeertalen","persoonlijke problemen met pc, 2 keer full reset en herinstallatie moeten doen"],
-            "neg":["weinig kennis, dus veel moeten vragen en ook wachten, productiviteit was dus laag"],
+            "pos": [
+                "ervaring van echte werksfeer",
+                "leren werken met nieuwe programmeertalen",
+                "persoonlijke problemen met pc, 2 keer full reset en herinstallatie moeten doen"
+            ],
+            "neg": [
+                "weinig kennis, dus veel moeten vragen en ook wachten, productiviteit was dus laag"
+            ],
             "stress": 4,
             "motivation": 8,
-            "tags": ["Windows", "Beginnen van 0", "Fixed" ]
+            "tags": [
+                "Windows",
+                "Beginnen van 0",
+                "Fixed"
+            ]
         },
         {
             "id": 2,
-            "date":"2025-09-23",
+            "date": "2025-09-23",
             "title": "Start van de tweede week",
             "description": "Start van interne procedure / opleiding. Leren werken met de software. Demo / testdomein gekregen om in te werken.",
-            "pos":["hands on leren werken", "effectieve code bekeken","start project AI integratie"],
-            "neg":["drukke periode voor collegas, dus weinig vragen durven strellen", "niet de reële omgeving, dus nog steeds iddues"],
+            "pos": [
+                "hands on leren werken",
+                "effectieve code bekeken",
+                "start project AI integratie"
+            ],
+            "neg": [
+                "drukke periode voor collegas, dus weinig vragen durven strellen",
+                "niet de reële omgeving, dus nog steeds iddues"
+            ],
             "stress": 3,
             "motivation": 7,
-            "tags": ["IntelliJ", "API", "AI","Beginnen van 0" ]  
+            "tags": [
+                "IntelliJ",
+                "API",
+                "AI",
+                "Beginnen van 0"
+            ]
         },
         {
             "id": 3,
-            "date":"2025-09-25",
+            "date": "2025-09-25",
             "title": "Onderzoek AI integratie",
             "description": "Onderzoek gedaan naar mogelijke AI integratie in de software. Eigen optie helemaal uitgewerkt",
-            "pos":["betrokkenheid", "iets bruikbaar maken","resultaat zien"],
-            "neg":["veel foutmeldingen --> Chatgpt"],
+            "pos": [
+                "betrokkenheid",
+                "iets bruikbaar maken",
+                "resultaat zien"
+            ],
+            "neg": [
+                "veel foutmeldingen --> Chatgpt"
+            ],
             "stress": 5,
             "motivation": 9,
-            "tags": ["Code", "Building", "API", "AI"  ]
+            "tags": [
+                "Code",
+                "Building",
+                "API",
+                "AI"
+            ]
         },
         {
             "id": 4,
-            "date":"2025-10-03",
+            "date": "2025-10-03",
             "title": "Selenium Testing en Modules",
             "description": "Eind 3de week heb ik me vooral beziggehouden met het afwerken van de (dev)modules gemaakt door DeskDrive en het oplossen en verder uitschrijven van een opstart project van Selenium Testing. Tegen vrijdag heb ik alle testen correct aangepast en nu wacht ik op feedback voor mijn werkwijze en verder opdrachten hierrond",
-            "pos":["resultaat is zichtbaar", "bijdrage aan het team"],
-            "neg":["tijdbesteding, sommige taken duren te lang"," niet zelfstandig kunnen werken"],
+            "pos": [
+                "resultaat is zichtbaar",
+                "bijdrage aan het team"
+            ],
+            "neg": [
+                "tijdbesteding, sommige taken duren te lang",
+                " niet zelfstandig kunnen werken"
+            ],
             "stress": 6,
             "motivation": 10,
-            "tags": ["Code", "Testing", "Templates", "Results"  ]
+            "tags": [
+                "Code",
+                "Testing",
+                "Templates",
+                "Results"
+            ]
         }
-     
-
-
     ]
 }
