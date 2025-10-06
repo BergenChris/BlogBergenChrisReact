@@ -8,25 +8,31 @@ import './App.css';
 import Graph from './pages/graphs';
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(true);
   const [backgroundToggled, setBackgroundToggled] = useState(false);
+
 
 
 
   
   useEffect(() => {
-
+    const timestamp = new Date().getTime(); 
     const html = document.documentElement;
     const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
     if (isMobile) {
       // Always keep hidden and closed on mobile
-       html.style.backgroundImage = `url('/data/background/backgroundPhone.jpg')`
+      setMenuOpen(false);
+       html.style.backgroundImage = `url('/data/background/backgroundPhone.jpg?t=${timestamp}')`;
+    }
+    else{
+      html.style.backgroundImage = backgroundToggled
+        ? `url('/data/background/background1.jpg?t=${timestamp}')`
+      : `url('/data/background/background2.jpg?t=${timestamp}')`;
 
     }
 
-
-
+    
   }, [backgroundToggled]);
 
   useEffect(() => {

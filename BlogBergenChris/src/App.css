@@ -3,6 +3,7 @@
   margin: 0 auto;
   text-align: center;
 }
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -189,10 +190,7 @@
 
 @media (max-width: 768px) {
 
-  html{
-    background-image: url('/data/background/backgroundPhone.jpg');
-    background-size: contain;
-  }  
+  
 
   .background-changer {
     visibility: hidden;

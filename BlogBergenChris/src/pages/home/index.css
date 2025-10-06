@@ -2,7 +2,7 @@
 
 .home-container {
   max-width: 100%;
-  padding: 4% 5% 2% 5%;
+  padding: 40px 5% 2% 5%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
 
@@ -143,4 +143,10 @@ body{
   .home-item a{
     font-size: 18px;
   }
+  .home-container {
+
+  padding-top: 0px;
+
+
+}
 }
