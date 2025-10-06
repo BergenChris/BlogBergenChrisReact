@@ -40,7 +40,6 @@ function App() {
       textSpan.classList.add('hide-on-scroll');   // verberg tekst
       bgButton.classList.add('hide-on-scroll');   // smalle knop
       setMenuOpen(false);
-
     } 
 
     lastScrollY = window.scrollY;
