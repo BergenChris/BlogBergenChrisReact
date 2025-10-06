@@ -30,7 +30,7 @@ function App() {
   }, [backgroundToggled]);
 
   useEffect(() => {
-  let lastScrollY = window.scrollY;
+
 
   const handleScroll = () => {
     const textSpan = document.querySelector('.changer-text');
@@ -60,7 +60,7 @@ function App() {
       setMenuOpen(false);
     } 
 
-    lastScrollY = window.scrollY;
+
   };
 
   window.addEventListener('scroll', handleScroll);
