@@ -15,11 +15,17 @@ function App() {
 
   
   useEffect(() => {
-    const timestamp = new Date().getTime(); 
+
     const html = document.documentElement;
-    html.style.backgroundImage = backgroundToggled
-      ? `url('/data/background/background1.jpg?t=${timestamp}')`
-    : `url('/data/background/background2.jpg?t=${timestamp}')`;
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+    if (isMobile) {
+      // Always keep hidden and closed on mobile
+       html.style.backgroundImage = `url('/data/background/backgroundPhone.jpg')`
+
+    }
+
+
 
   }, [backgroundToggled]);
 
@@ -30,6 +36,18 @@ function App() {
     const textSpan = document.querySelector('.changer-text');
     const bgButton = document.querySelector('.background-changer');
     if (!textSpan || !bgButton) return;
+
+    // Mobile detection
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+    if (isMobile) {
+      // Always keep hidden and closed on mobile
+      textSpan.classList.add('hide-on-scroll');
+      bgButton.classList.add('hide-on-scroll');
+      setMenuOpen(false);
+      return; // Exit early
+    }
+
     if (window.scrollY === 0){
       setMenuOpen(true);
       textSpan.classList.remove('hide-on-scroll');

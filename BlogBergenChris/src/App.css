@@ -188,6 +188,16 @@
 
 
 @media (max-width: 768px) {
+
+  html{
+    background-image: url('/data/background/backgroundPhone.jpg');
+    background-size: contain;
+  }  
+
+  .background-changer {
+    visibility: hidden;
+  }
+  
   .nav-menu.open {
 
     visibility: visible;
@@ -217,6 +227,10 @@
   border-radius: 6px 6px 0 0;
   width: var(--menu-width);
   
+  }
+  .navbar{
+    height:0px;
+
   }
 }
 

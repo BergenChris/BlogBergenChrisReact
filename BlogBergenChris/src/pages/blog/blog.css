@@ -13,10 +13,12 @@ body {
   box-sizing: border-box;
 }
 
+
+
 /* Container */
 .blog-page-container {
   max-width: 100%;
-  padding: 4% 5% 2% 5%;
+  padding: 50px 5% 2% 5%;
 }
 
 /* Header */
@@ -34,6 +36,11 @@ body {
     font-size: 8px;
     margin-bottom: 0;
   }
+
+  .blog-page-container {
+  max-width: 100%;
+  padding: 0 5% 2% 5%;
+}
 }
 
 /* Blog lijst en items */
