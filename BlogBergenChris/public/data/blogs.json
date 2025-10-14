@@ -77,7 +77,7 @@
             ],
             "neg": [
                 "tijdbesteding, sommige taken duren te lang",
-                " niet zelfstandig kunnen werken"
+                "niet zelfstandig kunnen werken"
             ],
             "stress": 6,
             "motivation": 10,
@@ -86,6 +86,47 @@
                 "Testing",
                 "Templates",
                 "Results"
+            ]
+        },
+        {
+            "id": 5,
+            "date": "2025-10-10",
+            "title": "Meeting with the boss",
+            "description": "Einde van de week 4 even samengezeten en overlopen vanb selenium tests in groep. Wie zit waar en hoe pakken we dit aan. Net voor de meeting begon, paar files van locatie willen wisselen waardoor al mijn testen ineens niet meer slaagden. Dit dan even ter plekke nagekeken en opgelost. Even stressen maar uiteindelijk kunnen nakijken en tips gekregen.",
+            "pos": [
+                "werkplekLEREN",
+                "wie niets doet kan niets verkeerd doen"
+            ],
+            "neg": [
+                "verloren tijd"
+            ],
+            "stress": 9,
+            "motivation": 8,
+            "tags": [
+                "Testing",
+                "Boss",
+                "Progress"
+            ]
+        },
+        {
+            "id": 6,
+            "date": "2025-10-14",
+            "title": "Deskdrtive App",
+            "description": "Maandag te horen gekregen dat we mee mochten werken aan de app. Beginnende met onderzoeken hoe we deze moeten launchen. Ikzelf opdracht google play store gekregen. ",
+            "pos": [
+                "iets tastbaars maken",
+                "beginnen van 0 tot einde?"
+            ],
+            "neg": [
+                "eerste keer"
+            ],
+            "stress": 6,
+            "motivation": 9,
+            "tags": [
+                "Android",
+                "App",
+                "google VS Apple",
+                "Documentation"
             ]
         }
     ]
