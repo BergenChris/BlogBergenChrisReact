@@ -128,6 +128,25 @@
                 "google VS Apple",
                 "Documentation"
             ]
+        },
+        {
+            "id": 7,
+            "date": "2025-10-16",
+            "title": "Logic Before coding",
+            "description": "Bepaalde Test liepen herhaaldelijk vast. Dit kwam omdat ik de functie Taak moest testen, maar niet echt de flow kende van hoe een taak wordt gemaakt en gebruikt. Collega van support gevraagd om mij eens uit te leggen hoe hij taken start en deze gebruikt en hoe deze op completed komen te staan.",
+            "pos": [
+                "meer kennis opdoen"
+            ],
+            "neg": [
+                "veel geklungel voor het te durven vragen"
+            ],
+            "stress": 7,
+            "motivation": 8,
+            "tags": [
+                "Collega",
+                "Stuck",
+                "Workflow"
+            ]
         }
     ]
 }
