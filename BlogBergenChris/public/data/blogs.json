@@ -133,7 +133,7 @@
             "id": 7,
             "date": "2025-10-16",
             "title": "Logic Before coding",
-            "description": "Bepaalde Test liepen herhaaldelijk vast. Dit kwam omdat ik de functie Taak moest testen, maar niet echt de flow kende van hoe een taak wordt gemaakt en gebruikt. Collega van support gevraagd om mij eens uit te leggen hoe hij taken start en deze gebruikt en hoe deze op completed komen te staan.",
+            "description": "Bepaalde tests liepen herhaaldelijk vast, omdat ik de functie Taak moest testen, maar de flow van hoe een taak wordt aangemaakt en gebruikt niet goed kende. Ik heb een collega van support gevraagd om mij uit te leggen hoe hij taken start en gebruikt, en hoe deze uiteindelijk op 'completed' komen te staan.",
             "pos": [
                 "meer kennis opdoen"
             ],
