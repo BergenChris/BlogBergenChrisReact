@@ -147,6 +147,26 @@
                 "Stuck",
                 "Workflow"
             ]
+        },
+        {
+            "id": 8,
+            "date": "2025-10-22",
+            "title": "More Testing",
+            "description": "Elke test nagekeken en doen werken, bij andere testers gaan helpen waar nodig. Alle werkende tests gemerged en conflicten opgelost.",
+            "pos": [
+                "git merge kennis opgedaan"
+            ],
+            "neg": [
+                "verschillende werkwijzen bij collega's in 1 zelfde stijl gieten"
+            ],
+            "stress": 5,
+            "motivation": 9,
+            "tags": [
+                "Collega",
+                "Testing",
+                "Git merge",
+                "Collaboration"
+            ]
         }
     ]
 }
