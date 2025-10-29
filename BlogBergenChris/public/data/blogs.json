@@ -167,6 +167,45 @@
                 "Git merge",
                 "Collaboration"
             ]
+        },{
+            "id": 9,
+            "date": "2025-10-24",
+            "title": "Specific Testing",
+            "description": "Na het leren werken met DeskDrive en het uitschrijven van Selenium testen kregen we nu specifieke scenario's die moesten getest worden. Dit vroeg om samenwerking met andere collega's om de correcte aanpak te bepalen.",
+            "pos": [
+                "samenwerken met collega's",
+                "meer stappen plan uitgewerkt"
+            ],
+            "neg": [
+                "logica nog niet volledig beheersen"
+            ],
+            "stress": 6,
+            "motivation": 8,
+            "tags": [
+                "Testing",
+                "Collega",
+                "Workflow"
+            ]
+        },{
+            "id": 10,
+            "date": "2025-10-28", 
+            "title": "Client Related Work",
+            "description": "Op een projector van een collega kunnen werken en daar aan de templates mogen werken. Zeer complexe en nieuwe werkwijze. Veel moeten zoeken en begrijpen vooraleer er resultaat kwam.",
+            "pos": [
+                "verandering van spijs doet eten",
+                "resultaatgericht werken"
+            ],      
+            "neg": [
+                "nieuw, dus veel tijd in moeten steken",
+                "trage vooruitgang"
+            ],
+            "stress": 10,
+            "motivation": 6,
+            "tags": [
+                "Templates",
+                "Learning",
+                "Stuck"
+            ]  
         }
     ]
 }
