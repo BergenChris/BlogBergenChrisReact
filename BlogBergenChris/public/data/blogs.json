@@ -206,6 +206,28 @@
                 "Learning",
                 "Stuck"
             ]  
+        },{
+            "id":11,
+            "date": "2025-10-31",
+            "title": "Halloween",        
+            "description": "Handlers, templates en code mogen schrijven voor klanten",
+            "pos": [
+                "echt werk",
+                "snel leren"
+            ],  
+            "neg": [
+                "moet correct zijn",
+                "nog niet juiste flow van testen-->productie"
+            ],
+            "stress": 11,
+            "motivation": 9,
+            "tags": [
+                "Git",
+                "Merg-conflicts",
+                "Templates",
+                "Clients",
+                "Handlers"
+            ]
         }
     ]
 }
