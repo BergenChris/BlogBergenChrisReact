@@ -199,7 +199,7 @@
                 "nieuw, dus veel tijd in moeten steken",
                 "trage vooruitgang"
             ],
-            "stress": 10,
+            "stress": 8,
             "motivation": 6,
             "tags": [
                 "Templates",
@@ -219,7 +219,7 @@
                 "moet correct zijn",
                 "nog niet juiste flow van testen-->productie"
             ],
-            "stress": 11,
+            "stress": 7,
             "motivation": 9,
             "tags": [
                 "Git",
@@ -227,6 +227,27 @@
                 "Templates",
                 "Clients",
                 "Handlers"
+            ]
+        },{
+            "id":12,
+            "date": "2025-11-05",              
+            "title": "First Client Work",
+            "description": "Eerste echte klant werk mogen doen. Handlers en templates aanpassen voor klanten. Veel moeten zoeken en vragen hoe alles juist in mekaar zit.",
+            "pos": [
+                "echt werk",
+                "meer betrokken voelen"
+            ],  
+            "neg": [
+                "veel moeten vragen",
+                "nog niet alles begrijpen"
+            ],
+            "stress": 5,
+            "motivation": 10,
+            "tags": [
+                "Clients",
+                "Templates",
+                "Handlers",
+                "Learning"
             ]
         }
     ]
