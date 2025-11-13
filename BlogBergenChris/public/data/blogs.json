@@ -249,6 +249,25 @@
                 "Handlers",
                 "Learning"
             ]
+        },{
+            "id":13,
+            "date": "2025-11-13",              
+            "title": "Testing the system",
+            "description": "Vandaag de instellingen getest van een domein. Ontdekt dat door hier fouten te maken bepaalde domeinen volledig onbruikbaar worden. Veel geleerd over de impact van bepaalde aanpassingen van de instellingen.",
+            "pos": [
+                "Bugs ontdenkt die klanten mss ook tegenkomen"
+            ],  
+            "neg": [
+                "veel moeten wachten op resets test databank",
+                "veel extra werk geleverd aan collegas"
+            ],
+            "stress": 6,
+            "motivation": 7,
+            "tags": [
+                "Testing",
+                "Collega",
+                "Code"
+            ]
         }
     ]
 }
