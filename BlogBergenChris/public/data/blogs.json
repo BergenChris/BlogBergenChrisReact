@@ -16,7 +16,6 @@
             "stress": 4,
             "motivation": 8,
             "tags": [
-                "Windows",
                 "Beginnen van 0",
                 "Fixed"
             ]
@@ -38,8 +37,6 @@
             "stress": 3,
             "motivation": 7,
             "tags": [
-                "IntelliJ",
-                "API",
                 "AI",
                 "Beginnen van 0"
             ]
@@ -61,7 +58,6 @@
             "motivation": 9,
             "tags": [
                 "Code",
-                "API",
                 "AI"
             ]
         },
@@ -121,7 +117,7 @@
             ],
             "stress": 6,
             "motivation": 9,
-            "tags": [   
+            "tags": [
                 "App",
                 "Documentation"
             ]
@@ -161,10 +157,10 @@
             "tags": [
                 "Collega",
                 "Testing",
-                "Git",
-                "Collaboration"
+                "Git"
             ]
-        },{
+        },
+        {
             "id": 9,
             "date": "2025-10-24",
             "title": "Specific Testing",
@@ -183,15 +179,16 @@
                 "Collega",
                 "Workflow"
             ]
-        },{
+        },
+        {
             "id": 10,
-            "date": "2025-10-28", 
+            "date": "2025-10-28",
             "title": "Client Related Work",
             "description": "Op een projector van een collega kunnen werken en daar aan de templates mogen werken. Zeer complexe en nieuwe werkwijze. Veel moeten zoeken en begrijpen vooraleer er resultaat kwam.",
             "pos": [
                 "verandering van spijs doet eten",
                 "resultaatgericht werken"
-            ],      
+            ],
             "neg": [
                 "nieuw, dus veel tijd in moeten steken",
                 "trage vooruitgang"
@@ -202,16 +199,17 @@
                 "Templates",
                 "Learning",
                 "Stuck"
-            ]  
-        },{
-            "id":11,
+            ]
+        },
+        {
+            "id": 11,
             "date": "2025-10-31",
-            "title": "Halloween",        
+            "title": "Halloween",
             "description": "Handlers, templates en code mogen schrijven voor klanten. Iets mogen bouwen dat erna door anderen gaat gebruikt worden is een zeer motiverende factor. Oog voor detail is hier zeer belangrijk.",
             "pos": [
                 "echt werk",
                 "snel leren"
-            ],  
+            ],
             "neg": [
                 "moet correct zijn",
                 "nog niet juiste flow van testen-->productie"
@@ -224,15 +222,16 @@
                 "Clients",
                 "Handlers"
             ]
-        },{
-            "id":12,
-            "date": "2025-11-05",              
+        },
+        {
+            "id": 12,
+            "date": "2025-11-05",
             "title": "First Client Work",
             "description": "Eerste echte klant werk mogen doen. Handlers en templates aanpassen voor klanten. Veel moeten zoeken en vragen hoe alles juist in mekaar zit.",
             "pos": [
                 "echt werk",
                 "meer betrokken voelen"
-            ],  
+            ],
             "neg": [
                 "veel moeten vragen",
                 "nog niet alles begrijpen"
@@ -245,14 +244,15 @@
                 "Handlers",
                 "Learning"
             ]
-        },{
-            "id":13,
-            "date": "2025-11-13",              
+        },
+        {
+            "id": 13,
+            "date": "2025-11-13",
             "title": "Testing the system",
             "description": "Vandaag de instellingen getest van een domein. Ontdekt dat door hier fouten te maken bepaalde domeinen volledig onbruikbaar worden. Veel geleerd over de impact van bepaalde aanpassingen van de instellingen.",
             "pos": [
                 "Bugs ontdenkt die klanten mss ook tegenkomen"
-            ],  
+            ],
             "neg": [
                 "veel moeten wachten op resets test databank",
                 "veel extra werk geleverd aan collegas"
@@ -264,15 +264,16 @@
                 "Collega",
                 "Code"
             ]
-        },{
-            "id":14,
-            "date": "2025-11-14",              
+        },
+        {
+            "id": 14,
+            "date": "2025-11-14",
             "title": "Presentatie 2 over de testen",
             "description": "Vrijdagnamiddag al onze testen proberen te laten runnen op hun systeem. Direct problemen ondervonden van testen die niet werken. Voornamelijk testen geschereven door men medestudenten die nog niet af waren of niet meer werkten. Dit dan allemaal manueel moeten nakijken en corrigeren. Uiteindelijk toch alles opgeschoon gekregen zodat we hopelijk maandag het eens in werking kunnen zien",
             "pos": [
                 "leren werken onder (tijds)druk",
                 "eigen testen, enkel gekende problemen met wait functies die nog onduidelijk zijn"
-            ],  
+            ],
             "neg": [
                 "rekenen op afgewerkte testen van anderen",
                 "baas die niet tevreden was natuurlijk"
@@ -282,7 +283,7 @@
             "tags": [
                 "Testing",
                 "Code",
-                "Prssure"
+                "Boss"
             ]
         }
     ]
