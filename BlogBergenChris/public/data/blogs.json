@@ -61,7 +61,6 @@
             "motivation": 9,
             "tags": [
                 "Code",
-                "Building",
                 "API",
                 "AI"
             ]
@@ -122,10 +121,8 @@
             ],
             "stress": 6,
             "motivation": 9,
-            "tags": [
-                "Android",
+            "tags": [   
                 "App",
-                "google VS Apple",
                 "Documentation"
             ]
         },
@@ -164,7 +161,7 @@
             "tags": [
                 "Collega",
                 "Testing",
-                "Git merge",
+                "Git",
                 "Collaboration"
             ]
         },{
@@ -223,7 +220,6 @@
             "motivation": 9,
             "tags": [
                 "Git",
-                "Merg-conflicts",
                 "Templates",
                 "Clients",
                 "Handlers"
@@ -267,6 +263,26 @@
                 "Testing",
                 "Collega",
                 "Code"
+            ]
+        },{
+            "id":14,
+            "date": "2025-11-14",              
+            "title": "Presentatie 2 over de testen",
+            "description": "Vrijdagnamiddag al onze testen proberen te laten runnen op hun systeem. Direct problemen ondervonden van testen die niet werken. Voornamelijk testen geschereven door men medestudenten die nog niet af waren of niet meer werkten. Dit dan allemaal manueel moeten nakijken en corrigeren. Uiteindelijk toch alles opgeschoon gekregen zodat we hopelijk maandag het eens in werking kunnen zien",
+            "pos": [
+                "leren werken onder (tijds)druk",
+                "eigen testen, enkel gekende problemen met wait functies die nog onduidelijk zijn"
+            ],  
+            "neg": [
+                "rekenen op afgewerkte testen van anderen",
+                "baas die niet tevreden was natuurlijk"
+            ],
+            "stress": 9,
+            "motivation": 6,
+            "tags": [
+                "Testing",
+                "Code",
+                "Prssure"
             ]
         }
     ]
