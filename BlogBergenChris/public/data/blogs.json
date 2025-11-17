@@ -285,6 +285,27 @@
                 "Code",
                 "Boss"
             ]
+        },{
+            "id" : 15,
+            "date": "2025-11-17",   
+            "title": "ALL TESTS PASSED",
+            "description": "Alle testen geslaagd gekregen na veel zoeken, hulp vragen en code aanpassen. Zeer tevreden met het resultaat en de vooruitgang die ik geboekt heb sinds het begin van mijn stage.",
+            "pos": [
+                "Task Done",
+                "eindelijk resultaat"
+            ],  
+            "neg": [
+                "veel tijd kwijt aan kleine details",
+                "zoeken naar fouten die, om dan nieuwe fouten te ontdekken",
+                "de valkuil van selneium testing ontdekt"
+            ],
+            "stress": 6,
+            "motivation": 10,
+            "tags": [
+                "Testing",
+                "Improvement",
+                "Feedback"
+            ]
         }
     ]
 }
