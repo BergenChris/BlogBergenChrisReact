@@ -306,6 +306,42 @@
                 "Improvement",
                 "Feedback"
             ]
+        },{
+            "id" : 16,
+            "date": "2025-11-20",   
+            "title": "Deskdrive 10j",
+            "description": "Bedrijfsjubileum meegevierd. Leuk om met de klanten in contact te komen en de sfeer te proeven. Veel geleerd over het bedrijf en zijn geschiedenis.",
+            "pos": [
+                "sfeer",
+                "contact met klanten"
+            ],  
+            "neg": [
+                "lange dag"
+            ],
+            "stress": 4,
+            "motivation": 9,
+            "tags": [
+                "Clients"
+            ]
+        },{
+            "id" : 17,
+            "date": "2025-11-25",   
+            "title": "Horror of PDFs",
+            "description": "Weer aan echte formulieren mogen werken. Ditmaal PDF formulieren die zeer complex zijn. Veel moeten zoeken en proberen om de juiste velden te vinden en in te vullen.",
+            "pos": [
+                "veel geleerd",
+                "goede ervaring"
+            ],  
+            "neg": [
+                "enorm complexe manier van werken",
+                "moeilijk correct te gebruiken"
+            ],
+            "stress": 8,
+            "motivation": 8,
+            "tags": [
+                "Clients",
+                "Experience"
+            ]       
         }
     ]
 }
