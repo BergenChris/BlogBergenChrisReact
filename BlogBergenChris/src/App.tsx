@@ -1,11 +1,16 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+
 import HomePage from "./pages/home";
 import LatestBlogRedirect from "./pages/blog/latestblog";
 import BlogBergenChris from "./pages/blog/blog";
 import BlogById from "./pages/blog/[id]";
-import { useEffect, useState } from "react";
-import "./App.css";
+import About from "./pages/about";
 import Graph from "./pages/graphs";
+
+
+import "./App.css";
+
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(true);
@@ -83,6 +88,9 @@ function App() {
           <Link to="/blog/latestblog" onClick={() => setMenuOpen(false)}>
             Laatste Blog
           </Link>
+          <Link to="/about" onClick={() => setMenuOpen(false)}>
+            Over
+          </Link>
         </nav>
         <button
           onClick={() => setBackgroundToggled(!backgroundToggled)}
@@ -99,6 +107,7 @@ function App() {
         <Route path="/blog/:id" element={<BlogById />} />
         <Route path="/blog/latestblog" element={<LatestBlogRedirect />} />
         <Route path="/graphs" element={<Graph />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </BrowserRouter>
   );
