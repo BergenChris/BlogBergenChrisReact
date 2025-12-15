@@ -7,22 +7,21 @@ function About() {
         <header className="blog-header">
           <h1>Over Mij</h1>
           <p>
-            Welkom op de over mij pagina van mijn blog! Hier deel ik wat
-            informatie over mezelf en mijn WPL-stage bij DeskDrive.
+            Welkom op de over mij pagina van mijn blog!
           </p>
         </header>
         <main>
           <h2>Wie ben ik?</h2>
           <p>
             Ik ben Chris Bergen, student graduaat programmeren te AP-Hogeschool
-            Antwerpen. Momenteel in mijn laatste gedeelte richting mijn diploma.
+            Antwerpen. Momenteel in mijn WPL-stage bij DeskDrive.
             Vanaf februari zou ik dan klaar zijn voor de arbeidsmarkt.
           </p>
           <h2>Mijn Blog</h2>
           <p>
             Op mijn blog komen leuke en minder leuke momenten tijdens mijn
-            stage, zodat jullie kunnen volgen hoe mijn stage verloopt.
-            Het zullen obstakels bevatten die ik ben tegengekomen, maar ook hoe ik ermee om ben gegaan en ze heb overwonnen.
+            carriere, zodat jullie kunnen zien wat het inhoudt om als nieuwe IT'er in het werkveld te komen.
+            Mijn blog zal obstakels bevatten die ik ben tegengekomen, maar ook hoe ik ermee om ben gegaan en ze heb overwonnen.
           </p>
           <h2>Contact</h2>
           <p>
