@@ -9,6 +9,7 @@ function Blog() {
   const [loading, setLoading] = useState(true);
   const [isReversed, setIsReversed] = useState(true);
   const [tags, setTags] = useState<string[]>([]);
+  const [showAllTags, setShowAllTags] = useState(false);
   const [searchParams, setSearchParams] = useSearchParams();
   const urlTag = searchParams.get("tag");
 
@@ -21,17 +22,24 @@ function Blog() {
         setItems(data.blogs);
         setFilteredItems(data.blogs);
 
-        const allTags = new Set<string>(); //set zorgt dat er geen dubbele tags zijn
+        // 1. Tel hoe vaak elke tag voorkomt
+        const tagCounts: { [key: string]: number } = {};
+
         data.blogs.forEach((blog: BlogItem) => {
           if (blog.tags) {
-            blog.tags.forEach((tag) => allTags.add(tag));
+            blog.tags.forEach((tag) => {
+              tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+            });
           }
         });
-        setTags(Array.from(allTags));
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error("Error loading JSON:", err);
+
+        // 2. Filter de tags die meer dan 1 keer voorkomen
+        // 3. Sorteer ze direct op basis van de waarde in tagCounts (descending)
+        const sortedCommonTags = Object.keys(tagCounts)
+          .filter((tag) => tagCounts[tag] > 1)
+          .sort((a, b) => tagCounts[b] - tagCounts[a]);
+
+        setTags(sortedCommonTags);
         setLoading(false);
       });
   }, []);
@@ -65,25 +73,42 @@ function Blog() {
       </header>
 
       <div className="tag-container">
-        <div>
-          <h2>tags:</h2>
-        </div>
-        <div className="tag-container-buttons">
-          {tags.map((tag, index) => (
-            <button
-              key={index}
-              className="tag-button"
-              onClick={() => setSearchParams({ tag })}
-            >
-              {tag}
+  
+    
+          <div>
+            <h2>tags:</h2>
+          </div>
+
+          <div className="tag-container-buttons">
+            {/* Slice zorgt voor de eerste 6, tenzij showAllTags true is */}
+            {(showAllTags ? tags : tags.slice(0, 6)).map((tag, index) => (
+              <button
+                key={index}
+                className="tag-button"
+                onClick={() => setSearchParams({ tag })}
+              >
+                {tag}
+              </button>
+            ))}
+
+            {/* De "Toon meer" knop verschijnt enkel als er meer dan 6 tags zijn */}
+            {tags.length > 6 && (
+              <button
+                className="tag-button toggle-more"
+                onClick={() => setShowAllTags(!showAllTags)}
+                style={{ backgroundColor: "#e0e0e0", fontWeight: "bold" }} // Optionele styling om op te vallen
+              >
+                {showAllTags ? "« toon minder" : `+ ${tags.length - 6} meer`}
+              </button>
+            )}
+          </div>
+
+          <div style={{ marginTop: "10px" }}>
+            <button className="reset-tags" onClick={() => setSearchParams({})}>
+              Reset Tags
             </button>
-          ))}
-        </div>
-        <div>
-          <button className="reset-tags" onClick={() => setSearchParams({})}>
-            toon alles
-          </button>
-        </div>
+          </div>
+    
       </div>
       <ul className="blog-list">
         {displayItems.map((item) => (

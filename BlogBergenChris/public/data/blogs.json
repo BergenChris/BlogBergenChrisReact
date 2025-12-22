@@ -342,6 +342,63 @@
                 "Clients",
                 "Experience"
             ]       
+        },{
+            "id": 18,
+            "date": "2025-12-04",
+            "title": "More Testing",
+            "description": "Alle testen nu op een andere manier leren oproepen. Zoals het in de realiteit gebeurd op de werkvloer. Nu zijn er errors ontstaan die we ervoor niet kregen wegens een andere werking.",
+            "pos": [
+                "Meerdere scenarios geleerd",
+                "Diepere kennis van het systeem"
+            ],
+            "neg": [
+                "Logica moeten herschrijven",
+                "nieuwe werking onder de knie krijgen"
+            ],
+            "stress": 4,
+            "motivation": 8,
+            "tags": [
+                "Testing",
+                "Experience"
+            ]
+        },{
+            "id": 19,
+            "date": "2025-12-12",
+            "title": "Handlers en Drivers leren schrijven en gebruiken",
+            "description": "Diepere logica leren kennen van het bedrijf en hoe we deze moeten opzoeken om zo specifieke handlers te leren schrijven voor bepaalde domeinen en klanten.",
+            "pos": [
+                "Diepere kennis van de logica en het model achter DeskDrive",
+                "Groter beeld gekregen van hoe alles in mekaar zit"
+            ],
+            "neg": [
+                "Veel reed bestaande data dus veel zoekwerk",
+                "Meerdere manieren gevonden, dus moeten leren uitzoeken welke de beste is"
+            ],
+            "stress": 4,
+            "motivation": 9,
+            "tags": [
+                "Drivers",
+                "Handlers"
+            ]
+        },{
+            "id": 20,
+            "date": "2025-12-19",
+            "title": "Bedrijsbezoek",
+            "description": "Mee mogen gaan op bedrijfsbezoek. Deels de demo meegegeven aan de klant. Zo gezien dat elk bedrijf zijn eigen workflow heeft en dat dit op maat kan worden aangepast per klant.",
+            "pos": [
+                "Al doende leert men",
+                "betere kennis dashboard"
+            ],
+            "neg": [
+                "veel nieuwe info",
+                "enkele foutjes gemaakt tijden demo"
+            ],
+            "stress": 7,
+            "motivation": 8,
+            "tags": [
+                "Clients",
+                "Workflow"
+            ]
         }
     ]
 }
