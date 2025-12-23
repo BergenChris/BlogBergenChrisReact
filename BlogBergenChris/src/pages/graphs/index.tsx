@@ -12,6 +12,8 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
+import { useNavigate } from "react-router-dom";
+
 
 ChartJS.register(
   CategoryScale,
@@ -24,7 +26,11 @@ ChartJS.register(
 );
 
 
+
+
 function Graph() {
+  
+  const navigate = useNavigate();
   const [items, setItems] = useState<BlogItem[]>([]);
 
   const [loading, setLoading] = useState(true);
@@ -52,56 +58,59 @@ function Graph() {
 
   return (
     <div className="graph-page-container">
-        <header className="graph-header">
-            <h1>Grafiek Motivatie & Stress</h1>
-        </header>       
-        {items.length > 0 && (
-            <div className="chart-container">
-                <Line
-                  data={{
-                    labels: items.map((item) => `ID ${item.id}`),
-                    datasets: [
-                      {
-                        label: 'Motivatie',
-                        data: items.map((item) => item.motivation),
-                        borderColor: 'rgba(54, 162, 235, 1)',
-                        backgroundColor: 'rgba(54, 162, 235, 1)',
-                        tension: 0.3,
-                      },
-                      {
-                        label: 'Stress',
-                        data: items.map((item) => item.stress),
-                        borderColor: 'rgba(255, 99, 132, 1)',
-                        backgroundColor: 'rgba(255, 99, 132, 1)',
-                        tension: 0.3,
-                      },
-                    ],
-                  }}
-                  options={{
-                    responsive: true,
-                    plugins: {
-                      legend: {
-                        position: 'top' as const,
-                      },
-                      title: {
-                        display: true,
-                        text: 'Motivatie en Stress per Blog ID',
-                      },
-                    },
-                    scales: {
-                      y: {
-                        beginAtZero: true,
-                        max: 10,
-                      },
-                    },
-                  }}
-                />
-
-            </div>
-            )}
-
-
-        
+      <header className="graph-header">
+        <h1>Grafiek Motivatie & Stress</h1>
+      </header>
+      {items.length > 0 && (
+        <div className="chart-container">
+          <Line
+            data={{
+              labels: items.map((item) => `${item.id}`),
+              datasets: [
+                {
+                  label: "Motivatie",
+                  data: items.map((item) => item.motivation),
+                  borderColor: "rgba(54, 162, 235, 1)",
+                  backgroundColor: "rgba(54, 162, 235, 1)",
+                  tension: 0.3,
+                },
+                {
+                  label: "Stress",
+                  data: items.map((item) => item.stress),
+                  borderColor: "rgba(255, 99, 132, 1)",
+                  backgroundColor: "rgba(255, 99, 132, 1)",
+                  tension: 0.3,
+                },
+              ],
+            }}
+            options={{
+              responsive: true,
+              plugins: {
+                legend: {
+                  position: "top" as const,
+                },
+                title: {
+                  display: true,
+                  text: "Motivatie en Stress per Blog",
+                },
+              },
+              scales: {
+                y: {
+                  beginAtZero: true,
+                  max: 10,
+                },
+              },
+              onClick: (_event, elements) => {
+                if (elements.length > 0) {
+                  const index = elements[0].index;
+                  const blogId = items[index].id;
+                  navigate(`/blog/${blogId}`);
+                }
+              },
+            }}
+          />
+        </div>
+      )}
     </div>
   );
 }
