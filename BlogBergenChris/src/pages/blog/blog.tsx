@@ -73,42 +73,39 @@ function Blog() {
       </header>
 
       <div className="tag-container">
-  
-    
-          <div>
-            <h2>tags:</h2>
-          </div>
+        <div>
+          <h2>tags:</h2>
+        </div>
 
-          <div className="tag-container-buttons">
-            {/* Slice zorgt voor de eerste 6, tenzij showAllTags true is */}
-            {(showAllTags ? tags : tags.slice(0, 6)).map((tag, index) => (
-              <button
-                key={index}
-                className="tag-button"
-                onClick={() => setSearchParams({ tag })}
-              >
-                {tag}
-              </button>
-            ))}
-
-            {/* De "Toon meer" knop verschijnt enkel als er meer dan 6 tags zijn */}
-            {tags.length > 6 && (
-              <button
-                className="tag-button toggle-more"
-                onClick={() => setShowAllTags(!showAllTags)}
-                style={{ backgroundColor: "#e0e0e0", fontWeight: "bold" }} // Optionele styling om op te vallen
-              >
-                {showAllTags ? "« toon minder" : `+ ${tags.length - 6} meer`}
-              </button>
-            )}
-          </div>
-
-          <div style={{ marginTop: "10px" }}>
-            <button className="reset-tags" onClick={() => setSearchParams({})}>
-              Reset Tags
+        <div className="tag-container-buttons">
+          {/* Slice zorgt voor de eerste 6, tenzij showAllTags true is */}
+          {(showAllTags ? tags : tags.slice(0, 6)).map((tag, index) => (
+            <button
+              key={index}
+              className="tag-button"
+              onClick={() => setSearchParams({ tag })}
+            >
+              {tag}
             </button>
-          </div>
-    
+          ))}
+
+          {/* De "Toon meer" knop verschijnt enkel als er meer dan 6 tags zijn */}
+          {tags.length > 6 && (
+            <button
+              className="tag-button toggle-more"
+              onClick={() => setShowAllTags(!showAllTags)}
+              style={{ backgroundColor: "#e0e0e0", fontWeight: "bold" }} // Optionele styling om op te vallen
+            >
+              {showAllTags ? "« toon minder" : `+ ${tags.length - 6} meer`}
+            </button>
+          )}
+        </div>
+
+        <div style={{ marginTop: "10px" }}>
+          <button className="reset-tags" onClick={() => setSearchParams({})}>
+            Reset Tags
+          </button>
+        </div>
       </div>
       <ul className="blog-list">
         {displayItems.map((item) => (
@@ -127,7 +124,11 @@ function Blog() {
               <p className="blog-date">
                 <strong>Datum:</strong> {item.date}
               </p>
-              <p className="blog-description">{item.description}</p>
+              <div className="blog-description">
+                {item.description.map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                ))}
+              </div>
             </div>
             <div className="blog-metrics">
               <div className="metric">

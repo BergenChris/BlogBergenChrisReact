@@ -4,7 +4,7 @@
             "id": 1,
             "date": "2025-09-18",
             "title": "Startup week",
-            "description": "De eerste dagen waren vooral kennis maken. Alles correct installeren en met de werking van het bedrijf en de programmas kennis maken. ",
+            "description": ["Tijdens mijn eerste stageweek bij een CRM/ERP-bedrijf stond alles vooral in het teken van kennismaken en opstarten. Het gaat om een klein bedrijf met ongeveer 7 à 8 werknemers, wat meteen zorgde voor een persoonlijke en toegankelijke sfeer. Het bedrijf werkt met klanten uit verschillende sectoren, waardoor al snel duidelijk werd dat de software zeer veelzijdig is.","De ontvangst op mijn eerste dag was zeer positief. Ik werd goed begeleid door twee senior developers, die fungeerden als mijn vaste aanspreekpunten. Zij namen de tijd om mij wegwijs te maken in het bedrijf, de werking en de verwachtingen. Dit gaf mij meteen een geruststellend gevoel, ondanks dat alles nog nieuw was.","Een groot deel van de eerste dagen bestond uit het installeren en correct instellen van de nodige software. We werken onder andere met IntelliJ en Java, wat voor mij volledig nieuw was. Hierdoor voelde het soms alsof ik echt van nul moest beginnen, maar tegelijk was het ook motiverend om nieuwe technologieën te leren kennen die in een professionele omgeving gebruikt worden.","De werksfeer binnen het bedrijf is informeel en aangenaam. Iedereen is behulpzaam en er is ruimte om vragen te stellen. Momenteel werk ik vooral samen met andere stagiairs, wat het leerproces aangenamer maakt omdat we samen nieuwe dingen ontdekken en elkaar kunnen helpen.","Tijdens deze week liep ik ook tegen een praktisch probleem aan: mijn pc gaf meerdere keren problemen, waardoor ik uiteindelijk twee keer een volledige reset en herinstallatie moest uitvoeren. Dit was frustrerend en kostte tijd, maar het is bewust opgenomen in deze blog omdat er ook een foto van is toegevoegd. Achteraf bekeken heb ik hier wel een belangrijke les uit geleerd: soms is een frisse start echt de beste oplossing, zowel technisch als mentaal.","Omdat ik nog weinig voorkennis had, moest ik regelmatig vragen stellen en soms ook wachten op uitleg. Hierdoor lag mijn productiviteit deze week niet erg hoog, maar dat is logisch in een opstartfase. Momenteel ligt de focus vooral op informatie verzamelen, observeren en de werkwijze van het bedrijf leren kennen."],
             "pos": [
                 "ervaring van echte werksfeer",
                 "leren werken met nieuwe programmeertalen",
@@ -24,7 +24,7 @@
             "id": 2,
             "date": "2025-09-23",
             "title": "Start van de tweede week",
-            "description": "Start van interne procedure / opleiding. Leren werken met de software. Demo / testdomein gekregen om in te werken.",
+            "description": ["Start van interne procedure / opleiding. Leren werken met de software. Demo / testdomein gekregen om in te werken."],
             "pos": [
                 "hands on leren werken",
                 "effectieve code bekeken",
@@ -45,7 +45,7 @@
             "id": 3,
             "date": "2025-09-25",
             "title": "Onderzoek AI integratie",
-            "description": "Onderzoek gedaan naar mogelijke AI integratie in de software. Eigen optie helemaal uitgewerkt",
+            "description": ["Onderzoek gedaan naar mogelijke AI integratie in de software. Eigen optie helemaal uitgewerkt"],
             "pos": [
                 "betrokkenheid",
                 "iets bruikbaar maken",
@@ -65,7 +65,7 @@
             "id": 4,
             "date": "2025-10-03",
             "title": "Selenium Testing en Modules",
-            "description": "Eind 3de week heb ik me vooral beziggehouden met het afwerken van de (dev)modules gemaakt door DeskDrive en het oplossen en verder uitschrijven van een opstart project van Selenium Testing. Tegen vrijdag had ik alle testen correct aangepast en nu wacht ik op feedback over mijn werkwijze en verdere opdrachten hierrond.",
+            "description": ["Eind 3de week heb ik me vooral beziggehouden met het afwerken van de (dev)modules gemaakt door DeskDrive en het oplossen en verder uitschrijven van een opstart project van Selenium Testing. Tegen vrijdag had ik alle testen correct aangepast en nu wacht ik op feedback over mijn werkwijze en verdere opdrachten hierrond."],
             "pos": [
                 "resultaat is zichtbaar",
                 "bijdrage aan het team"
@@ -87,7 +87,7 @@
             "id": 5,
             "date": "2025-10-10",
             "title": "Meeting with the boss",
-            "description": "Einde van de week 4 even samengezeten en overlopen vanb selenium tests in groep. Wie zit waar en hoe pakken we dit aan. Net voor de meeting begon, paar files van locatie willen wisselen waardoor al mijn testen ineens niet meer slaagden. Dit dan even ter plekke nagekeken en opgelost. Even stressen maar uiteindelijk kunnen nakijken en tips gekregen.",
+            "description": ["Einde van de week 4 even samengezeten en overlopen vanb selenium tests in groep. Wie zit waar en hoe pakken we dit aan. Net voor de meeting begon, paar files van locatie willen wisselen waardoor al mijn testen ineens niet meer slaagden. Dit dan even ter plekke nagekeken en opgelost. Even stressen maar uiteindelijk kunnen nakijken en tips gekregen."],
             "pos": [
                 "werkplekLEREN",
                 "wie niets doet kan niets verkeerd doen"
@@ -107,7 +107,7 @@
             "id": 6,
             "date": "2025-10-14",
             "title": "DeskDrive App",
-            "description": "Maandag te horen gekregen dat we mee mochten werken aan de app. Beginnende met onderzoeken hoe we deze moeten launchen. Ikzelf opdracht google play store gekregen. ",
+            "description": ["Maandag te horen gekregen dat we mee mochten werken aan de app. Beginnende met onderzoeken hoe we deze moeten launchen. Ikzelf opdracht google play store gekregen."],
             "pos": [
                 "iets tastbaars maken",
                 "beginnen van 0 tot einde?"
@@ -126,7 +126,7 @@
             "id": 7,
             "date": "2025-10-16",
             "title": "Logic Before coding",
-            "description": "Bepaalde tests liepen herhaaldelijk vast, omdat ik de functie Taak moest testen, maar de flow van hoe een taak wordt aangemaakt en gebruikt niet goed kende. Ik heb een collega van support gevraagd om mij uit te leggen hoe hij taken start en gebruikt, en hoe deze uiteindelijk op 'completed' komen te staan.",
+            "description": ["Bepaalde tests liepen herhaaldelijk vast, omdat ik de functie Taak moest testen, maar de flow van hoe een taak wordt aangemaakt en gebruikt niet goed kende. Ik heb een collega van support gevraagd om mij uit te leggen hoe hij taken start en gebruikt, en hoe deze uiteindelijk op 'completed' komen te staan."],
             "pos": [
                 "meer kennis opdoen"
             ],
@@ -145,7 +145,7 @@
             "id": 8,
             "date": "2025-10-22",
             "title": "More Testing",
-            "description": "Elke test nagekeken en doen werken, bij andere testers gaan helpen waar nodig. Alle werkende tests gemerged en conflicten opgelost.",
+            "description": ["Elke test nagekeken en doen werken, bij andere testers gaan helpen waar nodig. Alle werkende tests gemerged en conflicten opgelost."],
             "pos": [
                 "git merge kennis opgedaan"
             ],
@@ -164,7 +164,7 @@
             "id": 9,
             "date": "2025-10-24",
             "title": "Specific Testing",
-            "description": "Na het leren werken met DeskDrive en het uitschrijven van Selenium testen kregen we nu specifieke scenario's die moesten getest worden. Dit vroeg om samenwerking met andere collega's om de correcte aanpak te bepalen.",
+            "description": ["Na het leren werken met DeskDrive en het uitschrijven van Selenium testen kregen we nu specifieke scenario's die moesten getest worden. Dit vroeg om samenwerking met andere collega's om de correcte aanpak te bepalen."],
             "pos": [
                 "samenwerken met collega's",
                 "meer stappen plan uitgewerkt"
@@ -184,7 +184,7 @@
             "id": 10,
             "date": "2025-10-28",
             "title": "Client Related Work",
-            "description": "Op een projector van een collega kunnen werken en daar aan de templates mogen werken. Zeer complexe en nieuwe werkwijze. Veel moeten zoeken en begrijpen vooraleer er resultaat kwam.",
+            "description": ["Op een projector van een collega kunnen werken en daar aan de templates mogen werken. Zeer complexe en nieuwe werkwijze. Veel moeten zoeken en begrijpen vooraleer er resultaat kwam."],
             "pos": [
                 "verandering van spijs doet eten",
                 "resultaatgericht werken"
@@ -205,7 +205,7 @@
             "id": 11,
             "date": "2025-10-31",
             "title": "Halloween",
-            "description": "Handlers, templates en code mogen schrijven voor klanten. Iets mogen bouwen dat erna door anderen gaat gebruikt worden is een zeer motiverende factor. Oog voor detail is hier zeer belangrijk.",
+            "description": ["Handlers, templates en code mogen schrijven voor klanten. Iets mogen bouwen dat erna door anderen gaat gebruikt worden is een zeer motiverende factor. Oog voor detail is hier zeer belangrijk."],
             "pos": [
                 "echt werk",
                 "snel leren"
@@ -227,7 +227,7 @@
             "id": 12,
             "date": "2025-11-05",
             "title": "First Client Work",
-            "description": "Eerste echte klant werk mogen doen. Handlers en templates aanpassen voor klanten. Veel moeten zoeken en vragen hoe alles juist in mekaar zit.",
+            "description": ["Eerste echte klant werk mogen doen. Handlers en templates aanpassen voor klanten. Veel moeten zoeken en vragen hoe alles juist in mekaar zit."],
             "pos": [
                 "echt werk",
                 "meer betrokken voelen"
@@ -249,7 +249,7 @@
             "id": 13,
             "date": "2025-11-13",
             "title": "Testing the system",
-            "description": "Vandaag de instellingen getest van een domein. Ontdekt dat door hier fouten te maken bepaalde domeinen volledig onbruikbaar worden. Veel geleerd over de impact van bepaalde aanpassingen van de instellingen.",
+            "description": ["Vandaag de instellingen getest van een domein. Ontdekt dat door hier fouten te maken bepaalde domeinen volledig onbruikbaar worden. Veel geleerd over de impact van bepaalde aanpassingen van de instellingen."],
             "pos": [
                 "Bugs ontdenkt die klanten mss ook tegenkomen"
             ],
@@ -269,7 +269,7 @@
             "id": 14,
             "date": "2025-11-14",
             "title": "Presentatie 2 over de testen",
-            "description": "Vrijdagnamiddag al onze testen proberen te laten runnen op hun systeem. Direct problemen ondervonden van testen die niet werken. Voornamelijk testen geschereven door men medestudenten die nog niet af waren of niet meer werkten. Dit dan allemaal manueel moeten nakijken en corrigeren. Uiteindelijk toch alles opgeschoon gekregen zodat we hopelijk maandag het eens in werking kunnen zien",
+            "description": ["Vrijdagnamiddag al onze testen proberen te laten runnen op hun systeem. Direct problemen ondervonden van testen die niet werken. Voornamelijk testen geschereven door men medestudenten die nog niet af waren of niet meer werkten. Dit dan allemaal manueel moeten nakijken en corrigeren. Uiteindelijk toch alles opgeschoon gekregen zodat we hopelijk maandag het eens in werking kunnen zien"],
             "pos": [
                 "leren werken onder (tijds)druk",
                 "eigen testen, enkel gekende problemen met wait functies die nog onduidelijk zijn"
@@ -289,7 +289,7 @@
             "id" : 15,
             "date": "2025-11-17",   
             "title": "ALL TESTS PASSED",
-            "description": "Alle testen geslaagd gekregen na veel zoeken, hulp vragen en code aanpassen. Zeer tevreden met het resultaat en de vooruitgang die ik geboekt heb sinds het begin van mijn stage.",
+            "description": ["Alle testen geslaagd gekregen na veel zoeken, hulp vragen en code aanpassen. Zeer tevreden met het resultaat en de vooruitgang die ik geboekt heb sinds het begin van mijn stage."],
             "pos": [
                 "Task Done",
                 "eindelijk resultaat"
@@ -310,7 +310,7 @@
             "id" : 16,
             "date": "2025-11-20",   
             "title": "Deskdrive 10j",
-            "description": "Bedrijfsjubileum meegevierd. Leuk om met de klanten in contact te komen en de sfeer te proeven. Veel geleerd over het bedrijf en zijn geschiedenis.",
+            "description":  ["Bedrijfsjubileum meegevierd. Leuk om met de klanten in contact te komen en de sfeer te proeven. Veel geleerd over het bedrijf en zijn geschiedenis."],
             "pos": [
                 "sfeer",
                 "contact met klanten"
@@ -327,7 +327,7 @@
             "id" : 17,
             "date": "2025-11-25",   
             "title": "Horror of PDFs",
-            "description": "Weer aan echte formulieren mogen werken. Ditmaal PDF formulieren die zeer complex zijn. Veel moeten zoeken en proberen om de juiste velden te vinden en in te vullen.",
+            "description": ["Weer aan echte formulieren mogen werken. Ditmaal PDF formulieren die zeer complex zijn. Veel moeten zoeken en proberen om de juiste velden te vinden en in te vullen."],
             "pos": [
                 "veel geleerd",
                 "goede ervaring"
@@ -346,7 +346,7 @@
             "id": 18,
             "date": "2025-12-04",
             "title": "More Testing",
-            "description": "Alle testen nu op een andere manier leren oproepen. Zoals het in de realiteit gebeurd op de werkvloer. Nu zijn er errors ontstaan die we ervoor niet kregen wegens een andere werking.",
+            "description": ["Alle testen nu op een andere manier leren oproepen. Zoals het in de realiteit gebeurd op de werkvloer. Nu zijn er errors ontstaan die we ervoor niet kregen wegens een andere werking."],
             "pos": [
                 "Meerdere scenarios geleerd",
                 "Diepere kennis van het systeem"
@@ -365,7 +365,7 @@
             "id": 19,
             "date": "2025-12-12",
             "title": "Handlers en Drivers leren schrijven en gebruiken",
-            "description": "Diepere logica leren kennen van het bedrijf en hoe we deze moeten opzoeken om zo specifieke handlers te leren schrijven voor bepaalde domeinen en klanten.",
+            "description": ["Diepere logica leren kennen van het bedrijf en hoe we deze moeten opzoeken om zo specifieke handlers te leren schrijven voor bepaalde domeinen en klanten."],
             "pos": [
                 "Diepere kennis van de logica en het model achter DeskDrive",
                 "Groter beeld gekregen van hoe alles in mekaar zit"
@@ -384,7 +384,7 @@
             "id": 20,
             "date": "2025-12-19",
             "title": "Bedrijsbezoek",
-            "description": "Mee mogen gaan op bedrijfsbezoek. Deels de demo meegegeven aan de klant. Zo gezien dat elk bedrijf zijn eigen workflow heeft en dat dit op maat kan worden aangepast per klant.",
+            "description": ["Mee mogen gaan op bedrijfsbezoek. Deels de demo meegegeven aan de klant. Zo gezien dat elk bedrijf zijn eigen workflow heeft en dat dit op maat kan worden aangepast per klant."],
             "pos": [
                 "Al doende leert men",
                 "betere kennis dashboard"
@@ -398,6 +398,24 @@
             "tags": [
                 "Clients",
                 "Workflow"
+            ]
+        },{
+            "id": 21,
+            "date": "2025-12-26",
+            "title": "Einde stage voorbereiding",
+            "description": ["Beginnen met het voorbereiden van het einddocument. Zien welke delen ik nog moet bevragen aan Tonny (nu op verlof). Wat ik al heb en wat nog ontbreekt."],
+            "pos": [
+                "overzicht van alles wat ik geleerd heb",
+                "succesvol verlopen"
+            ],
+            "neg": [
+                "aan alle mooie sprookjes komt een einde",
+                "voelt aan als huiswerk"
+            ],
+            "stress": 2,
+            "motivation": 6,
+            "tags": [
+                "The End"
             ]
         }
     ]
