@@ -24,7 +24,12 @@
             "id": 2,
             "date": "2025-09-23",
             "title": "Start van de tweede week",
-            "description": ["Start van interne procedure / opleiding. Leren werken met de software. Demo / testdomein gekregen om in te werken."],
+            "description": ["De tweede week begon met de interne procedure en opleiding, waar ik de kans kreeg om te leren werken met de software. We begonnen met IntelliJ, wat ik eerst lokaal heb getest via TestNG. Dit gaf me de gelegenheid om hands-on ervaring op te doen, hoewel ik niet direct in de echte omgeving werkte. In de demo/testdomein kreeg ik wat taken om mee te oefenen, wat goed was om een gevoel voor de tools te krijgen.",
+                "Een ander aspect van deze week was het project voor de AI-integratie, waar ik samenwerkte met andere studenten. We waren bezig met de integratie van AI in een bestaand systeem, en dit was een waardevolle ervaring om te leren samenwerken in een team, vooral op technisch gebied. De communicatie en samenwerking tussen de teamleden was cruciaal, vooral met de complexiteit van AI-projecten.",
+                "Door de drukte bij mijn collega's vond ik het soms moeilijk om vragen te stellen. In plaats van vast te lopen of wachten op antwoorden, besloot ik me meer te focussen op de taken die wel lukten en verder te gaan. Dit zorgde ervoor dat ik niet helemaal stilviel, maar tegelijkertijd was het frustrerend omdat ik vaak niet zeker was of ik alles goed begreep.",
+                "De testomgeving waarin ik werkte was kleiner en beperkter dan de echte werkomgeving. Er waren minder variabelen en ik had niet de volledige toegang die ik zou hebben in een productieomgeving, wat het lastig maakte om een realistisch beeld te krijgen van hoe de software in een bedrijf zou functioneren. Dit verschil zorgde voor wat onzekerheid over hoe mijn werk zou uitpakken in de echte wereld.",
+                "Wat stress veroorzaakte deze week, was vooral het gevoel van constante vragen stellen. Ik was bang om verkeerde vragen te stellen of om mijn collega's te storen. Er waren ook veel verschillende werkwijzen, wat me in de war bracht. Het voelde soms alsof ik niet de juiste aanpak had, wat resulteerde in een zekere druk om alles perfect te doen, terwijl dingen niet altijd meteen lukten."
+            ],
             "pos": [
                 "hands on leren werken",
                 "effectieve code bekeken",
@@ -45,17 +50,16 @@
             "id": 3,
             "date": "2025-09-25",
             "title": "Onderzoek AI integratie",
-            "description": ["Onderzoek gedaan naar mogelijke AI integratie in de software. Eigen optie helemaal uitgewerkt"],
+            "description": ["Onderzoek gedaan naar mogelijke AI integratie in de software met een andere groep studentn. Na een tijdje liepen we gezamenlijk vast en ben ik verder beginnen werken aan voorgaan zaken. "],
             "pos": [
                 "betrokkenheid",
-                "iets bruikbaar maken",
-                "resultaat zien"
+                "nieuwe dingen geleerd"
             ],
             "neg": [
                 "veel foutmeldingen --> Chatgpt"
             ],
-            "stress": 5,
-            "motivation": 9,
+            "stress": 7,
+            "motivation": 6,
             "tags": [
                 "Code",
                 "AI"
@@ -65,7 +69,11 @@
             "id": 4,
             "date": "2025-10-03",
             "title": "Selenium Testing en Modules",
-            "description": ["Eind 3de week heb ik me vooral beziggehouden met het afwerken van de (dev)modules gemaakt door DeskDrive en het oplossen en verder uitschrijven van een opstart project van Selenium Testing. Tegen vrijdag had ik alle testen correct aangepast en nu wacht ik op feedback over mijn werkwijze en verdere opdrachten hierrond."],
+            "description": [
+                "Vorige paar dagen heb ik me vooral beziggehouden met het afwerken van de (dev)modules die door DeskDrive zijn ontwikkeld. Omdat dit voor mij nieuw terrein was, moest ik in het begin vaak vragen stellen om alles goed te begrijpen. Dit zorgde ervoor dat sommige taken langer duurden dan verwacht, maar het was een waardevolle leercurve. Ik heb geleerd hoe ik de verschillende onderdelen van de modules kon aanpassen en optimaliseren, terwijl ik tegelijkertijd meer vertrouwd raakte met de codebase van DeskDrive. Dit was een belangrijke ervaring, omdat het me in staat stelde om effectief bij te dragen aan het team en mijn technische vaardigheden verder te ontwikkelen.",
+                "Daarnaast ben ik aan de slag gegaan met een opstartproject van Selenium Testing. Dit project betrof voornamelijk het corrigeren en aanvullen van bestaande tests, maar ik kreeg ook de kans om zelf wat kleinere tests te schrijven om meer ervaring op te doen met de Selenium-omgeving. Het schrijven van de tests was een uitdaging, omdat ik er nog niet heel veel ervaring mee had, maar het gaf me ook de kans om de kracht van Selenium beter te begrijpen. Door zelf te experimenteren, kon ik ook een aantal valkuilen vermijden en mijn begrip van geautomatiseerd testen vergroten.",
+                "Tegen het einde van de week had ik alle tests die ik had aangepast correct geconfigureerd en klaar voor review. Nu wacht ik op feedback van mijn teamleden over mijn werkwijze en de kwaliteit van de uitgevoerde tests. Deze feedback zal me helpen om mijn aanpak verder te verbeteren en beter voorbereid te zijn voor toekomstige projecten. De voortgang voelt goed, maar ik ben benieuwd naar de suggesties en verbeterpunten die het team zal aandragen."
+            ],
             "pos": [
                 "resultaat is zichtbaar",
                 "bijdrage aan het team"
@@ -87,7 +95,11 @@
             "id": 5,
             "date": "2025-10-10",
             "title": "Meeting with the boss",
-            "description": ["Einde van de week 4 even samengezeten en overlopen vanb selenium tests in groep. Wie zit waar en hoe pakken we dit aan. Net voor de meeting begon, paar files van locatie willen wisselen waardoor al mijn testen ineens niet meer slaagden. Dit dan even ter plekke nagekeken en opgelost. Even stressen maar uiteindelijk kunnen nakijken en tips gekregen."],
+            "description": [
+                "Aan het einde van de week heb ik samen met de groep een meeting gehad om de voortgang van de Selenium tests te bespreken. We hebben gekeken naar wie wat doet en hoe we de aanpak gaan structureren voor de komende tijd. Het was goed om even alles door te nemen, zodat we op dezelfde lijn zaten en konden kijken waar we elkaar nog konden helpen. Toch ging de meeting niet helemaal zoals verwacht; er waren wat hobbels, en de communicatie verliep niet altijd even soepel, wat het gesprek wat stroever maakte.",
+                "Net voor de meeting begon, probeerde ik de structuur van de bestanden wat logischer te maken door ze te herorganiseren. Helaas ging dit niet zoals gepland en kreeg ik allerlei fouten doordat ik nog niet volledig vertrouwd was met de werkomgeving, zoals IntelliJ. Omdat de structuur veranderd werd, bleven mijn testen niet slagen. Dit zorgde voor een beetje stress vlak voor de meeting, maar gelukkig kon ik het probleem snel ter plekke oplossen door de configuratie en bestandslocaties opnieuw na te kijken. Het was even spannend, maar ik voelde me opgelucht toen alles weer goed werkte. Dit gaf me ook de gelegenheid om te leren hoe ik sneller kan reageren op zulke situaties.",
+                "Tijdens de meeting hebben we als team een nieuwe werkwijze besproken, waarin we meer gestructureerd en gezamenlijk zouden aanpakken. We hebben enkele belangrijke punten besproken over hoe we de tests kunnen verbeteren en efficiënter kunnen uitvoeren. Uiteindelijk was het fijn om samen een oplossing te vinden voor de problemen die we tegenkwamen. Hoe meer ervaring ik opdoe, hoe meer inzicht ik krijg in hoe ik dergelijke situaties beter kan aanpakken. Het was een waardevolle sessie, zowel voor het project als voor mijn eigen ontwikkeling."
+            ],
             "pos": [
                 "werkplekLEREN",
                 "wie niets doet kan niets verkeerd doen"
@@ -107,7 +119,12 @@
             "id": 6,
             "date": "2025-10-14",
             "title": "DeskDrive App",
-            "description": ["Maandag te horen gekregen dat we mee mochten werken aan de app. Beginnende met onderzoeken hoe we deze moeten launchen. Ikzelf opdracht google play store gekregen."],
+            "description": [
+                "Tijdens deze periode kreeg ik de kans om mee te werken aan de DeskDrive App. De app bestond al, dus mijn eerste taak was vooral om de structuur en werking ervan te begrijpen. Dit betekende veel uitzoeken hoe de verschillende onderdelen in elkaar staken en hoe alles samenwerkte. Het was interessant om te zien hoe bestaande code en functionaliteiten georganiseerd zijn, en het gaf me een beter inzicht in de complexiteit van een app.",
+                "Mijn persoonlijke opdracht richtte zich op de Google Play Store. Hier lag de focus vooral op het afwerken van de benodigde flow voor publicatie, zodat de app uiteindelijk klaargemaakt kon worden voor gebruikers. Dit omvatte een reeks kleine stappen en onderdelen die zorgvuldig getest en gecontroleerd moesten worden. Het was leerzaam om te zien hoe gestructureerd zo’n proces verloopt en hoe belangrijk het is om niets over het hoofd te zien.",
+                "Daarnaast werkte ik in opdracht van anderen aan kleine delen van de app. Dit betekende dat ik taken kreeg die pasten bij mijn niveau en tegelijkertijd bijdroegen aan het grotere project. Zo kon ik ervaring opdoen in het werken met een team en leren hoe je onderdelen van een project overzichtelijk en correct oplevert. Tijdens dit proces viel ook het grote verschil op tussen het lanceren van een app op Google versus Apple, wat me een goed beeld gaf van de variaties in procedures tussen platformen.",
+                "Al met al gaf deze periode een combinatie van praktische ervaring, inzicht in bestaande apps en de structuur van publicatieprocessen. Het voelde motiverend om aan iets tastbaars te werken dat concreet bijdraagt aan een project."
+            ],
             "pos": [
                 "iets tastbaars maken",
                 "beginnen van 0 tot einde?"
@@ -126,7 +143,12 @@
             "id": 7,
             "date": "2025-10-16",
             "title": "Logic Before coding",
-            "description": ["Bepaalde tests liepen herhaaldelijk vast, omdat ik de functie Taak moest testen, maar de flow van hoe een taak wordt aangemaakt en gebruikt niet goed kende. Ik heb een collega van support gevraagd om mij uit te leggen hoe hij taken start en gebruikt, en hoe deze uiteindelijk op 'completed' komen te staan."],
+            "description": [
+                "Tijdens deze periode liep ik tegen problemen aan bij het testen van de functie Taak. De tests liepen herhaaldelijk vast omdat ik de logica en volgorde van de workflow nog niet volledig begreep. Vaak probeerde ik acties uit te voeren in de verkeerde volgorde of miste ik bepaalde stappen die eerst nodig waren om verder te gaan. Hierdoor werkte veel van mijn code pas als ik eerder iets anders had uitgevoerd, wat voor frustratie zorgde, maar ook inzicht gaf in hoe kritisch de juiste volgorde is binnen een systeem.",
+                "Om dit beter te begrijpen, vroeg ik een collega van support om uitleg. Hij werkt dagelijks met taken aan de “first line” en liet zien hoe hij een taak aanmaakt, gebruikt en uiteindelijk afrondt. Dankzij zijn uitleg kreeg ik duidelijk inzicht in de volledige flow en de logica erachter. Dit hielp me niet alleen om mijn tests correct op te zetten, maar ook om efficiënter te werken en fouten te vermijden die voortkwamen uit verkeerd begrip van de workflow.",
+                "Na het gesprek kon ik de tests meteen verbeteren en de functie Taak correct testen. Het was duidelijk dat eerst de logica van een proces begrijpen cruciaal is voordat je begint met coderen of testen. Ik ontdekte ook dat de manier waarop taken door het systeem lopen sterk kan verschillen per domein, wat me extra bewust maakte van de noodzaak om altijd goed de context te checken voordat je aan de slag gaat.",
+                "Al met al gaf deze periode veel inzicht in het belang van workflow, samenwerking met collega’s en gestructureerd werken, en het versterkte mijn kennis en vertrouwen bij het uitvoeren van tests."
+            ],
             "pos": [
                 "meer kennis opdoen"
             ],
@@ -145,7 +167,12 @@
             "id": 8,
             "date": "2025-10-22",
             "title": "More Testing",
-            "description": ["Elke test nagekeken en doen werken, bij andere testers gaan helpen waar nodig. Alle werkende tests gemerged en conflicten opgelost."],
+            "description": [
+                "In deze periode heb ik me volledig gericht op het controleren en laten werken van alle Selenium tests. Dit betekende dat ik elke test nauwkeurig moest nalopen en zorgen dat ze correct uitvoerden wat bedoeld was. Daarnaast heb ik andere testers ondersteund waar nodig. Vooral hielp ik hen de logica achter de tests te begrijpen en liet ik zien hoe ze bepaalde acties correct konden uitvoeren. Het was waardevol om te zien hoe kleine uitleg of demonstraties al een groot verschil konden maken in het werk van collega’s.",
+                "Een belangrijk deel van mijn werk bestond ook uit het mergen van alle werkende tests. Hierbij kwam Git uitgebreid aan bod: ik heb geleerd hoe ik verschillende versies kan samenvoegen en conflicten kan oplossen wanneer meerdere mensen aan dezelfde bestanden werken. Dit proces was soms uitdagend, maar gaf veel inzicht in hoe versiebeheer effectief kan worden toegepast binnen een team.",
+                "Wat extra aandacht vroeg, was het uniform maken van de verschillende werkwijzen van collega’s in één consistente stijl. Omdat er geen duidelijke afspraken waren over benamingen of structuur, moest ik keuzes maken om alles logisch en overzichtelijk te houden. Dit vergde zorgvuldigheid en doorzettingsvermogen, maar uiteindelijk zorgde het ervoor dat het testframework beter beheersbaar werd en iedereen gemakkelijker verder kon werken.",
+                "Al met al gaf deze periode veel inzicht in samenwerking, versiebeheer en het belang van duidelijke structuren bij geautomatiseerd testen. Het voelde goed om zowel zelfstandig als in teamverband een bijdrage te leveren aan het project."
+            ],
             "pos": [
                 "git merge kennis opgedaan"
             ],
@@ -162,9 +189,13 @@
         },
         {
             "id": 9,
-            "date": "2025-10-24",
             "title": "Specific Testing",
-            "description": ["Na het leren werken met DeskDrive en het uitschrijven van Selenium testen kregen we nu specifieke scenario's die moesten getest worden. Dit vroeg om samenwerking met andere collega's om de correcte aanpak te bepalen."],
+            "description": [
+                "Na het leren werken met DeskDrive en het uitschrijven van Selenium testen, kregen we nu specifieke scenario’s die getest moesten worden. In plaats van zeer kleine, geïsoleerde tests, ging het om volledige flows die meerdere stappen en onderdelen van de applicatie omvatten. Dit maakte het testen complexer en vroeg om een gestructureerde aanpak.",
+                "Bij dit proces nam ik eerder de leiding en zorgde ik ervoor dat de samenwerking met collega’s goed verliep. Samen bespraken we hoe we de tests het beste konden opzetten, maakten we stappenplannen en verdeelden we taken. Door dit teamwerk kon iedereen bijdragen en konden we efficiënt te werk gaan, ondanks de complexiteit van de scenario’s.",
+                "Omdat ik de logica van sommige flows nog niet volledig beheerste, moest ik veel vragen stellen aan collega’s met ervaring. Hun uitleg hielp me om fouten te voorkomen en de juiste aanpak te bepalen. Tegelijkertijd gaf het me de kans om bepaalde domeinen van de applicatie beter te leren kennen en een dieper inzicht te krijgen in hoe de verschillende onderdelen samenwerken.",
+                "Deze periode was waardevol om niet alleen mijn testvaardigheden te verbeteren, maar ook om te leren hoe je complexere processen organiseert en aanpakt binnen een team. Het gaf me meer vertrouwen bij het uitvoeren van volledige scenario’s en het begeleiden van samenwerking met collega’s."
+            ],
             "pos": [
                 "samenwerken met collega's",
                 "meer stappen plan uitgewerkt"
@@ -182,9 +213,12 @@
         },
         {
             "id": 10,
-            "date": "2025-10-28",
             "title": "Client Related Work",
-            "description": ["Op een projector van een collega kunnen werken en daar aan de templates mogen werken. Zeer complexe en nieuwe werkwijze. Veel moeten zoeken en begrijpen vooraleer er resultaat kwam."],
+            "description": [
+                "In deze periode kreeg ik de kans om op een projector van een collega te werken en me bezig te houden met de templates voor PDF-documenten, zoals orders, bestellingen en aankoopfacturen voor klanten. Dit betrof een macro die ze zelf geschreven hadden, met veel dependencies die ik nog niet kende. Hierdoor was het in het begin een uitdaging om alles correct te laten werken en de logica achter de macro te begrijpen.",
+                "Omdat de workflow nieuw was, begon ik eerst zelf met uitzoeken en experimenteren om te zien hoe de verschillende onderdelen samenwerkten. Waar ik vastliep, vroeg ik hints aan collega’s om te weten waar ik moest zoeken of welke stappen belangrijk waren. Zo leerde ik geleidelijk aan de structuur en de afhankelijkheden van de macro kennen en hoe ik de templates correct kon aanpassen en genereren.",
+                "Na een tijdje begon alles vlotter te lopen en kon ik zelfstandig resultaten opleveren. Het voelde goed om uiteindelijk functionerende templates te hebben die gebruikt konden worden voor klanten. Deze ervaring leerde me het belang van geduld, doorzettingsvermogen en systematisch leren bij het werken met complexe workflows en nieuwe tools. Bovendien gaf het me inzicht in hoe variatie in taken kan helpen om nieuwe vaardigheden te ontwikkelen en zelfvertrouwen op te bouwen bij uitdagende opdrachten."
+            ],
             "pos": [
                 "verandering van spijs doet eten",
                 "resultaatgericht werken"
@@ -203,9 +237,13 @@
         },
         {
             "id": 11,
-            "date": "2025-10-31",
             "title": "Halloween",
-            "description": ["Handlers, templates en code mogen schrijven voor klanten. Iets mogen bouwen dat erna door anderen gaat gebruikt worden is een zeer motiverende factor. Oog voor detail is hier zeer belangrijk."],
+            "description": [
+                "Tijdens deze periode kreeg ik de kans om handlers, templates en code te schrijven voor klanten. De handlers zijn stukken code die dienen voor automatisatie binnen een bepaald bedrijf, waardoor processen efficiënter en gestroomlijnder verlopen. Het was bijzonder motiverend om iets te bouwen dat daadwerkelijk een doel heeft en daarna door anderen gebruikt wordt. Deze tastbare impact gaf me veel voldoening en energie om mijn werk nauwkeurig uit te voeren.",
+                "Het schrijven van deze code bracht ook verantwoordelijkheden met zich mee. De wensen van de klanten moesten volledig vervuld worden, en de code mocht niet crashen of onverwachte fouten veroorzaken. Daarom moest ik veel aandacht besteden aan beveiliging, robuustheid en nauwkeurigheid in de implementatie. Elk detail was belangrijk om te zorgen dat de automatisatie correct en betrouwbaar werkte.",
+                "Daarnaast merkte ik dat het testen-naar-productieproces nog niet volledig vloeiend liep. Hoewel de code goed werkte in tests, was het soms een uitdaging om de juiste flow te volgen voordat iets live ging. Dit leerde me hoe belangrijk gestructureerd testen en controleren is, en hoe je zorgvuldig moet omgaan met productiecode die door klanten gebruikt zal worden.",
+                "Al met al gaf deze periode veel inzicht in het schrijven van functionele en veilige code voor echte klanten, het belang van oog voor detail, en het leren werken met de verantwoordelijkheid van productiecode."
+            ],
             "pos": [
                 "echt werk",
                 "snel leren"
@@ -225,9 +263,12 @@
         },
         {
             "id": 12,
-            "date": "2025-11-05",
             "title": "First Client Work",
-            "description": ["Eerste echte klant werk mogen doen. Handlers en templates aanpassen voor klanten. Veel moeten zoeken en vragen hoe alles juist in mekaar zit."],
+            "description": [
+                "In deze periode kreeg ik de kans om voor het eerst echt klantwerk te doen. Ik werkte aan handlers en templates die aangepast moesten worden voor specifieke klanten. Dit was een grote stap omdat het werk direct impact had op processen die daadwerkelijk gebruikt worden door bedrijven. Het gaf een sterk gevoel van betrokkenheid en verantwoordelijkheid, omdat ik zag dat mijn werk echt een doel had en gebruikt zou worden.",
+                "Omdat alles nieuw was en de structuur van de templates en handlers complex, moest ik veel uitzoeken en vragen stellen aan collega’s om te begrijpen hoe alles correct in elkaar zat. Dit betekende dat ik zorgvuldig moest analyseren welke onderdelen aangepast moesten worden en hoe veranderingen veilig konden worden doorgevoerd zonder de bestaande functionaliteit te breken.",
+                "Ondanks dat ik nog niet alles volledig begreep, hielp deze ervaring me enorm om vertrouwd te raken met klantgerichte workflows en het werken met productiecode. Het was een leerzame periode waarin ik niet alleen technische kennis opdeed, maar ook leerde hoe je gestructureerd en zorgvuldig te werk gaat wanneer je direct voor klanten werkt."
+            ],
             "pos": [
                 "echt werk",
                 "meer betrokken voelen"
@@ -269,7 +310,11 @@
             "id": 14,
             "date": "2025-11-14",
             "title": "Presentatie 2 over de testen",
-            "description": ["Vrijdagnamiddag al onze testen proberen te laten runnen op hun systeem. Direct problemen ondervonden van testen die niet werken. Voornamelijk testen geschereven door men medestudenten die nog niet af waren of niet meer werkten. Dit dan allemaal manueel moeten nakijken en corrigeren. Uiteindelijk toch alles opgeschoon gekregen zodat we hopelijk maandag het eens in werking kunnen zien"],
+           "description": [
+            "Vrijdagnamiddag hebben we geprobeerd al onze Selenium-testen op hun systeem te laten draaien. Al snel kwamen we echter problemen tegen: veel testen geschreven door medestudenten waren nog onafgewerkt of werkten niet meer. Het was duidelijk dat we niet simpelweg konden vertrouwen op wat er al klaarlag, en dat bracht meteen wat frustratie met zich mee.",
+            "Om alles werkend te krijgen, heb ik de testen handmatig nagekeken. Dit hield in dat ik elke test uitvoerde en de fouten oploste, of de test tijdelijk inschakelde zodat het geheel weer functioneerde. Het was een tijdrovend proces waarbij ik continu moest schakelen tussen controleren, corrigeren en opnieuw testen. Dit vroeg veel concentratie, maar gaf uiteindelijk ook een groot gevoel van voldoening.",
+            "Uiteindelijk kreeg ik alles opgeschoond en werkend, zodat we hopelijk maandag alles in actie kunnen zien. Deze ervaring leerde me een belangrijke les: alleen code pushen als de testen foutloos draaien, want anders kost het veel extra tijd en stress om alles weer op orde te krijgen. Daarnaast realiseerde ik me hoe belangrijk het is om onder tijdsdruk georganiseerd te blijven werken en prioriteiten te stellen."
+            ],
             "pos": [
                 "leren werken onder (tijds)druk",
                 "eigen testen, enkel gekende problemen met wait functies die nog onduidelijk zijn"
@@ -285,11 +330,16 @@
                 "Code",
                 "Boss"
             ]
-        },{
+        },
+        {
             "id" : 15,
             "date": "2025-11-17",   
             "title": "ALL TESTS PASSED",
-            "description": ["Alle testen geslaagd gekregen na veel zoeken, hulp vragen en code aanpassen. Zeer tevreden met het resultaat en de vooruitgang die ik geboekt heb sinds het begin van mijn stage."],
+            "description": [
+                "Na veel zoeken, hulp vragen en code aanpassen zijn eindelijk alle Selenium-testen geslaagd. Het was een intensief proces waarbij ik vooral veel errors tegenkwam door het gedrag van het dashboard, zoals onverwachte refreshes, partial refreshes of updates in de databank. Hierdoor moest ik goed begrijpen wat er wanneer gebeurde om de fouten correct aan te pakken.",
+                "Tonny gaf me hulp en advies tijdens dit proces, wat enorm hielp om de puzzelstukjes op hun plek te krijgen. Door zijn tips en mijn eigen doorzettingsvermogen kon ik beter begrijpen hoe de tests en het systeem op elkaar reageren, en welke aanpassingen nodig waren om alles stabiel te krijgen.",
+                "Het moment waarop alle testen geslaagd waren, gaf een groot gevoel van opluchting en trots. Niet alleen omdat het werk eindelijk resultaat opleverde, maar ook omdat ik het systeem en de onderliggende mechanismen veel beter begon te begrijpen. Het was duidelijk hoe veel vooruitgang ik geboekt heb sinds het begin van mijn stage, en dat maakte deze dag extra waardevol."
+            ],
             "pos": [
                 "Task Done",
                 "eindelijk resultaat"
@@ -310,7 +360,11 @@
             "id" : 16,
             "date": "2025-11-20",   
             "title": "Deskdrive 10j",
-            "description":  ["Bedrijfsjubileum meegevierd. Leuk om met de klanten in contact te komen en de sfeer te proeven. Veel geleerd over het bedrijf en zijn geschiedenis."],
+            "description": [
+                "Ik heb het bedrijfsjubileum van Deskdrive meegevierd ter gelegenheid van hun 10-jarig bestaan. Het was een leuke dag waarbij ik vooral de kans kreeg om klanten en collega’s op een andere manier te leren kennen. De informele sfeer maakte het gemakkelijk om gesprekken te voeren en meer inzicht te krijgen in hun perspectieven.",
+                "Tijdens het evenement werd ook aandacht besteed aan de geschiedenis en oorsprong van het bedrijf. Het was interessant om te leren hoe Deskdrive is begonnen en welke stappen het heeft gezet om te groeien tot waar het nu staat. Dit gaf een goed beeld van de cultuur en waarden die het bedrijf belangrijk vindt.",
+                "Het was een lange dag, maar bovenal erg plezierig. De combinatie van feestelijke activiteiten en persoonlijke interacties maakte het een waardevolle ervaring, en het gaf me nieuwe inzichten over het bedrijf en de manier waarop het met klanten en collega’s omgaat."
+            ],
             "pos": [
                 "sfeer",
                 "contact met klanten"
@@ -327,7 +381,11 @@
             "id" : 17,
             "date": "2025-11-25",   
             "title": "Horror of PDFs",
-            "description": ["Weer aan echte formulieren mogen werken. Ditmaal PDF formulieren die zeer complex zijn. Veel moeten zoeken en proberen om de juiste velden te vinden en in te vullen."],
+            "description": [
+                "Vandaag mocht ik weer aan echte formulieren werken, ditmaal zeer complexe PDF-formulieren. Wat het bijzonder uitdagend maakte, was dat er veel verschillende scenario’s in éénzelfde PDF waren verwerkt. Hierdoor moest ik goed onderscheiden welke velden en secties ik echt nodig had om de taak correct uit te voeren.",
+                "Het proces verliep traag en vergde veel tijd voor slechts één formulier. Ik moest vragen stellen, uitzoeken en proberen om te begrijpen hoe alles werkte en welke velden relevant waren. Het kostte veel geduld, maar het gaf ook een goed inzicht in hoe gedetailleerd en complex deze formulieren zijn opgebouwd.",
+                "Door deze ervaring heb ik mijn kennis van de verschillende scenario’s en beschikbare velden aanzienlijk verbeterd. Ondanks dat het soms frustrerend was en traag ging, was het een waardevolle oefening die me een betere kijk gaf op het werken met complexe PDF-formulieren en de uitdagingen die daarbij komen kijken."
+            ],
             "pos": [
                 "veel geleerd",
                 "goede ervaring"
@@ -346,7 +404,12 @@
             "id": 18,
             "date": "2025-12-04",
             "title": "More Testing",
-            "description": ["Alle testen nu op een andere manier leren oproepen. Zoals het in de realiteit gebeurd op de werkvloer. Nu zijn er errors ontstaan die we ervoor niet kregen wegens een andere werking."],
+            "description": [
+                "Vandaag hebben we alle Selenium-testen op een andere manier leren oproepen, zoals dat in de praktijk op de werkvloer gebeurt: via Maven en een pom.xml-bestand in plaats van lokaal. Deze nieuwe workflow bracht meteen nieuwe uitdagingen met zich mee, want er ontstonden errors die we eerder niet hadden gezien.",
+                "Veel van deze errors hadden te maken met elementen die niet stabiel waren of setup-methodes die eerder correct leken te werken maar nu problemen gaven. Het was soms lastig te achterhalen wat er precies fout liep door onsamenhangende foutmeldingen en onverwacht gedrag van het systeem.",
+                "Om dit op te lossen, heb ik een waitUntil-methode geschreven die controleerde of een element bereikbaar was voordat de test verderging. Door deze aanpak en veel trial-and-error kreeg ik een beter begrip van hoe complex en gevoelig Selenium-testen kunnen zijn in vergelijking met pure unittests.",
+                "Deze ervaring gaf me een diepere kennis van het systeem en meerdere scenario’s om rekening mee te houden. Hoewel het proces soms frustrerend was, gaf het ook veel inzicht in hoe testen werken in een realistische productieomgeving en hoe belangrijk het is om logica robuust en flexibel op te zetten."
+            ],
             "pos": [
                 "Meerdere scenarios geleerd",
                 "Diepere kennis van het systeem"
@@ -365,7 +428,11 @@
             "id": 19,
             "date": "2025-12-12",
             "title": "Handlers en Drivers leren schrijven en gebruiken",
-            "description": ["Diepere logica leren kennen van het bedrijf en hoe we deze moeten opzoeken om zo specifieke handlers te leren schrijven voor bepaalde domeinen en klanten."],
+            "description": [
+                "Vandaag heb ik geleerd hoe we specifieke handlers en drivers kunnen schrijven en gebruiken, voornamelijk rond automatisatie van statussen. Hoewel elk domein deze logica gebruikt, blijkt dat ieder domein het op een andere manier toepast, wat het opzoeken en begrijpen van de juiste aanpak uitdagend maakt.",
+                "Het proces vereiste veel zoekwerk, omdat ik door bestaande data moest navigeren en telkens moest nagaan hoe de logica binnen een bepaald domein precies werkte. Door de opdracht zorgvuldig te lezen en te analyseren, kon ik beslissen welke methode of aanpak het meest geschikt was voor een specifiek domein of klant.",
+                "Deze ervaring gaf me een bredere kennis van de bedrijfslogica en het systeem, en verbeterde mijn manier van zoeken en analyseren. Ik ben blij dat ik de kans kreeg om hiermee te werken, want het gaf me een duidelijker beeld van hoe alles in elkaar zit en hoe verschillende onderdelen van DeskDrive samenwerken."
+            ],
             "pos": [
                 "Diepere kennis van de logica en het model achter DeskDrive",
                 "Groter beeld gekregen van hoe alles in mekaar zit"
@@ -382,9 +449,13 @@
             ]
         },{
             "id": 20,
-            "date": "2025-12-19",
+            "date": "2025-12-18",
             "title": "Bedrijsbezoek",
-            "description": ["Mee mogen gaan op bedrijfsbezoek. Deels de demo meegegeven aan de klant. Zo gezien dat elk bedrijf zijn eigen workflow heeft en dat dit op maat kan worden aangepast per klant."],
+            "description": [
+                "Vandaag mocht ik mee op bedrijfsbezoek en deels een demo geven aan de klant. Het ging vooral over het geven van een korte opleiding over het gebruik van de software en het dashboard, met een focus op het aanmaken van offertes tot orders. Dit was een unieke kans om de workflow van dichtbij te zien en te begrijpen hoe elk bedrijf zijn processen op maat aanpast.",
+                "Door deze ervaring kreeg ik een veel beter beeld van de flow dan wanneer ik alleen had getest. Het hielp me te zien hoe de verschillende onderdelen van het dashboard samenwerken en welke stappen klanten dagelijks volgen. Hoewel ik deels onvoorbereid was, kreeg ik voldoende ondersteuning van collega’s om alles goed te begeleiden.",
+                "Tijdens de demo vergat ik enkele dingen, maar heb deze later alsnog vermeld. Het was een leerzame ervaring die zowel mijn kennis van het dashboard als mijn inzicht in klantgerichte workflows aanzienlijk vergrootte. Het gaf me ook een goed gevoel over hoe het is om direct met klanten te werken en mijn kennis praktisch toe te passen."
+            ],
             "pos": [
                 "Al doende leert men",
                 "betere kennis dashboard"
@@ -403,7 +474,11 @@
             "id": 21,
             "date": "2025-12-26",
             "title": "Einde stage voorbereiding",
-            "description": ["Beginnen met het voorbereiden van het einddocument. Zien welke delen ik nog moet bevragen aan Tonny (nu op verlof). Wat ik al heb en wat nog ontbreekt."],
+            "description": [
+                "Vandaag ben ik begonnen met het voorbereiden van het einddocument van mijn stage. Het was een goed moment om overzicht te krijgen van alles wat ik tot nu toe geleerd heb en wat ik al heb verzameld aan informatie en voorbeelden.",
+                "Tijdens het voorbereiden merkte ik ook welke onderdelen ik nog moet bevragen aan Tonny, die momenteel op verlof is. Dit gaf me inzicht in wat nog ontbreekt en waar ik later extra aandacht aan moet besteden om het document compleet en duidelijk te maken.",
+                "Het voelt een beetje als huiswerk, maar het was ook waardevol om stil te staan bij de vooruitgang die ik geboekt heb. Hoewel aan alle mooie dingen een einde komt, ben ik tevreden dat de voorbereiding succesvol verloopt en dat ik een overzicht krijg van mijn volledige stage-ervaring."
+            ],
             "pos": [
                 "overzicht van alles wat ik geleerd heb",
                 "succesvol verlopen"

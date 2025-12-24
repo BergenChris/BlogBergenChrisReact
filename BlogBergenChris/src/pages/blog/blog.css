@@ -115,6 +115,10 @@ body {
   text-align: center;
 }
 
+.blog-description p {
+  margin-bottom: 1rem;
+}
+
 /* Metrics container */
 .blog-metrics {
   display: flex;
