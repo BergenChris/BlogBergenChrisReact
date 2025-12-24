@@ -6,22 +6,23 @@ function LatestBlogRedirect() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('/data/blogs.json')
-      .then((res) => res.json())
-      .then((data) => {
-        const blogs: BlogItem[] = data.blogs;
+     fetch(
+       "https://raw.githubusercontent.com/BergenChris/BlogBergenChrisReact/refs/heads/main/BlogBergenChris/public/data/blogs.json")
+       .then((res) => res.json())
+       .then((data) => {
+         const blogs: BlogItem[] = data.blogs;
 
-        if (blogs.length > 0) {
-          const latestBlog = blogs[blogs.length - 1];
-          navigate(`/blog/${latestBlog.id}`);
-        } else {
-          navigate('/blog');
-        }
-      })
-      .catch((err) => {
-        console.error('Error loading blogs.json:', err);
-        navigate('/blog');
-      });
+         if (blogs.length > 0) {
+           const latestBlog = blogs[blogs.length - 1];
+           navigate(`/blog/${latestBlog.id}`);
+         } else {
+           navigate("/blog");
+         }
+       })
+       .catch((err) => {
+         console.error("Error loading blogs.json:", err);
+         navigate("/blog");
+       });
   }, [navigate]);
 
   return (

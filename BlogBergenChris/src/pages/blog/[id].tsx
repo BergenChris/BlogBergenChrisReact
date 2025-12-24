@@ -17,18 +17,19 @@ function BlogById() {
 
   // Haal blogs op en stel huidige blog in
   useEffect(() => {
-    fetch("/data/blogs.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setBlogs(data.blogs);
-        const found = data.blogs.find((b: BlogItem) => b.id === Number(id));
-        setBlogById(found || null);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error("Error loading JSON:", err);
-        setLoading(false);
-      });
+     fetch(
+       "https://raw.githubusercontent.com/BergenChris/BlogBergenChrisReact/refs/heads/main/BlogBergenChris/public/data/blogs.json")
+       .then((res) => res.json())
+       .then((data) => {
+         setBlogs(data.blogs);
+         const found = data.blogs.find((b: BlogItem) => b.id === Number(id));
+         setBlogById(found || null);
+         setLoading(false);
+       })
+       .catch((err) => {
+         console.error("Error loading JSON:", err);
+         setLoading(false);
+       });
   }, [id]);
 
   const handlePrevious = useCallback(() => {
