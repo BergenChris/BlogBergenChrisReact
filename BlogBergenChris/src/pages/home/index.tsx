@@ -85,7 +85,11 @@ export default function HomePage() {
                 {newest.title}
               </Link>
             </h3>
-            <p className="home-description">{newest.description}</p>
+            <div className="blog-description">
+              {newest.description.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
           </article>
         </section>
 
@@ -100,7 +104,11 @@ export default function HomePage() {
                       {title}
                     </Link>
                   </h3>
-                  <p className="home-description">{description}</p>
+                  <div className="blog-description">
+                    {description.map((paragraph, index) => (
+                      <p key={index}>{paragraph}</p>
+                    ))}
+                  </div>
                 </li>
               ))}
             </ul>

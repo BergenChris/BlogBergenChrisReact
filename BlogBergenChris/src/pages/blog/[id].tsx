@@ -102,7 +102,11 @@ function BlogById() {
           <p className="blog-date">
             <strong>Datum:</strong> {blogById.date}
           </p>
-          <p className="blog-description">{blogById.description}</p>
+          <div className="blog-description">
+            {blogById.description.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+          </div>
         </div>
 
         <div className="blog-metrics">
