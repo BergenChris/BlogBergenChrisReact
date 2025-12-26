@@ -492,6 +492,30 @@
             "tags": [
                 "The End"
             ]
+        },
+        {
+            "id": 22,
+            "date": "2025-12-231",
+            "title": "Einde stage",
+            "description": [
+                "De laatste dagen van mijn stage van mijn stage wil ik vooral gebruiken om alles wat ik tijdens mijn stage heb gemaakt te documenteren zodat mijn werk later kan hergebruikt worden.",
+                "Het zijn ook rustige dagen omdat veel bedrijven al in vakantie zijn waardoor er minder vragen binnenkomen.",
+                "Ik wil vooral het gevoel hebben dat wat ik gemaakt heb nuttig is geweest voor het bedrijf en dat ik iets heb bijgedragen aan de projecten waar ik aan gewerkt heb."
+            ],
+            "pos": [
+                "terugblik op van waar ik stond in het begin versus nu",
+                "bijdrage aan het team"
+            ],
+            "neg": [
+                "niet alles kunnen afwerken wat ik wou"
+            ],
+            "stress": 3,
+            "motivation": 9,
+            "tags": [
+                "The End",
+                "Experience"
+
+            ]
         }
     ]
 }
