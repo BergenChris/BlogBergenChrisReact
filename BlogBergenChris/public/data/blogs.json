@@ -189,6 +189,7 @@
         },
         {
             "id": 9,
+            "date": "2025-10-24",
             "title": "Specific Testing",
             "description": [
                 "Na het leren werken met DeskDrive en het uitschrijven van Selenium testen, kregen we nu specifieke scenario’s die getest moesten worden. In plaats van zeer kleine, geïsoleerde tests, ging het om volledige flows die meerdere stappen en onderdelen van de applicatie omvatten. Dit maakte het testen complexer en vroeg om een gestructureerde aanpak.",
@@ -213,6 +214,7 @@
         },
         {
             "id": 10,
+            "date": "2025-10-26",
             "title": "Client Related Work",
             "description": [
                 "In deze periode kreeg ik de kans om op een projector van een collega te werken en me bezig te houden met de templates voor PDF-documenten, zoals orders, bestellingen en aankoopfacturen voor klanten. Dit betrof een macro die ze zelf geschreven hadden, met veel dependencies die ik nog niet kende. Hierdoor was het in het begin een uitdaging om alles correct te laten werken en de logica achter de macro te begrijpen.",
@@ -237,6 +239,7 @@
         },
         {
             "id": 11,
+            "date": "2025-10-31",
             "title": "Halloween",
             "description": [
                 "Tijdens deze periode kreeg ik de kans om handlers, templates en code te schrijven voor klanten. De handlers zijn stukken code die dienen voor automatisatie binnen een bepaald bedrijf, waardoor processen efficiënter en gestroomlijnder verlopen. Het was bijzonder motiverend om iets te bouwen dat daadwerkelijk een doel heeft en daarna door anderen gebruikt wordt. Deze tastbare impact gaf me veel voldoening en energie om mijn werk nauwkeurig uit te voeren.",
@@ -263,6 +266,7 @@
         },
         {
             "id": 12,
+            "date": "2025-11-04",
             "title": "First Client Work",
             "description": [
                 "In deze periode kreeg ik de kans om voor het eerst echt klantwerk te doen. Ik werkte aan handlers en templates die aangepast moesten worden voor specifieke klanten. Dit was een grote stap omdat het werk direct impact had op processen die daadwerkelijk gebruikt worden door bedrijven. Het gaf een sterk gevoel van betrokkenheid en verantwoordelijkheid, omdat ik zag dat mijn werk echt een doel had en gebruikt zou worden.",
